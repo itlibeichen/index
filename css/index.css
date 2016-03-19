@@ -1,0 +1,355 @@
+.index {
+    width: 100%;
+    min-width: 1200px;
+    height: 2000px;
+    background: url("../images/index111.jpg") no-repeat 0 0;
+    margin: 0 auto;
+
+}
+
+/*音乐 start*/
+#music{
+    display: none;
+}
+/*音乐 end*/
+/*爆炸*/
+.boom{
+    width: 1350px;
+    height: 680px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:9999;
+    -webkit-transform-style:preserve-3d;
+    perspective:800px;
+
+}
+.boom span{
+    position:absolute;
+    background: url("../images/come.png") no-repeat;
+    -webkit-transform:translate(0,0) rotateX(0deg) rotateY(0deg);
+}
+/*爆炸 end*/
+
+/*navigation start*/
+.navigation {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo-list {
+    min-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+
+/**/
+
+@keyframes test{
+    from{
+        background-position:-1349px;
+    }
+    to{
+        background-position:0;
+    }
+}
+
+.logo-div-a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1349px;
+    height: 84px;
+    opacity: 0.6;
+    background: -webkit-linear-gradient(-45deg,#31004a 60px,transparent 61px,transparent 80px,#31004a 80px);
+    -webkit-animation-name: test;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    background: -moz-linear-gradient(-45deg,#31004a 60px,transparent 61px,transparent 80px,#31004a 80px);
+    -moz-animation-name: test;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-box-shadow: 0 -10px 10px #31004a;
+    -moz-box-shadow: 0 -10px 10px #31004a;
+    box-shadow: 0 2px 10px #31004a;
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    -webkit-transition: 1s all ease ;
+    -moz-transition: 1s all ease ;
+    -ms-transition: 1s all ease ;
+    -o-transition: 1s all ease ;
+    transition: 1s all ease ;
+}
+.logo-div-a:hover{/*
+    transform:  translateZ(1500px);
+    box-shadow: 5px 0 0 #ccc ;
+    background: -webkit-linear-gradient(-45deg,#f90 60px,transparent 61px,transparent 80px,#f90 80px);
+*/}
+/**/
+
+
+
+.logo {
+    float: left;
+    width: 285px;
+    height: 80px;
+    background: url("../images/this_logo.png") no-repeat 0;
+    position: relative;
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+/**/
+
+
+.list {
+    float: left;
+    height: 80px;
+    width: 840px;
+    padding: 0 0 0 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.list li {
+    float: left;
+    margin: 25px 0 0 0;
+}
+
+.list li a {
+    display: block;
+}
+
+.list li img {
+    width: 200px;
+    height: 50px;
+    display: block;
+}
+
+li.ma-40 {
+    margin: 25px 0 0 40px;
+}
+
+/*navigation end*/
+
+/*banner start*/
+.banner {
+    width: 1054px;
+    height: 510px;
+    background: url("../images/gav.png") no-repeat 0 0;
+    margin: 50px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.le, .ri {
+    border-radius: 50%;
+    box-shadow:inset 0 0 1px red,inset 0 0 1px red;
+    width: 46px;
+    height: 46px;
+    background: url("../images/le.png") no-repeat 0 0;
+    position: absolute;
+    cursor: pointer;
+    border:2px solid red;
+
+}
+
+.le {
+    top: 50%;
+    left: 10px;
+
+}
+
+.ri {
+    top: 50%;
+    right: 10px;
+}
+
+._box {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #f90;
+    box-shadow: 0 0 10px #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease;
+    -ms-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+}
+
+._box:hover {
+    background: red;
+}
+
+._box:active {
+    box-shadow: 0 0 0 0;
+}
+
+.banner_content {
+    overflow: hidden;
+    width: 925px;
+    height:425px;
+    margin: 48px 0 0 65px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #666,-1px -1px 1px #999;
+    position: relative;
+}
+.banner_content a img{
+    position: absolute;
+    top: 0px;
+    width: 925px;
+    height: 425px;
+    -webkit-transition: 1s all ease ;
+    -moz-transition: 1s all ease  ;
+    -ms-transition: 1s all ease  ;
+    -o-transition: 1s all ease  ;
+    transition: 1s all ease  ;
+    opacity: 0;
+    filter:alpha(opacity:0);
+}
+.banner_content a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*.banner_content a img:hover{
+    opacity: 0;
+}*/
+
+.arrow-t{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+.arrow-t li.ar1{
+    float: left;
+    width: 41px;
+    height: 63px;
+    background: url("../images/ar1.png") no-repeat 0 0;
+}
+.arrow-t li.ar2{
+    float: left;
+    width: 41px;
+    height: 63px;
+    background: url("../images/ar2.png") no-repeat 0 0;
+}
+.arrow-b{
+    position: absolute;
+    bottom: 3px;
+    right: 60px;
+}
+.arrow-b li.ar1{
+    float: right;
+    width: 47px;
+    height: 63px;
+    background: url("../images/br1.png") no-repeat 0 0;
+}
+.arrow-b li.ar2{
+    float: right;
+    width: 47px;
+    height: 63px;
+    background: url("../images/br2.png") no-repeat 0 0;
+}
+.btn{
+    overflow: hidden;
+    position: relative;
+    width: 304px;
+    height: 20px;
+    background: #000;
+    bottom: 10px;
+    left:50%;
+    /*z-index: 5;*/
+}
+.btn-ul{
+    width: 304px;
+    height: 21px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    bottom: -5px;
+    margin: 0 0 0 -152px;
+}
+.btn-ul li{
+    width: 58px;
+    height: 21px;
+    float: left;
+    margin: 0 15px 0 0;
+    background: url('../images/btn.png') no-repeat 0;
+    cursor: pointer;
+}
+li._active{
+    background: url('../images/btn2.png') no-repeat 0;
+}
+/*banner end*/
+
+/*return Start*/
+.return{
+    /*width: 90px;
+    height: 184px;*/
+    position: fixed;
+    bottom: 0;
+    right: -90px;
+    -webkit-box-shadow: 1px 1px 30px #ffffff;
+    -moz-box-shadow: 1px 1px 30px #ffffff;
+    box-shadow: 1px 1px 30px #ffffff;
+}
+.return-sh{
+    width: 90px;
+    height: 90px;
+    background: url("../images/sh.png") no-repeat 0 0;
+}
+.return-back{
+    width: 90px;
+    height: 90px;
+    background: url("../images/back.png") no-repeat 0 0;
+}
+.return-back a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*特效部分*/
+.hover-sh{
+    display: block;
+    cursor: pointer;
+    background: url("../images/sh2.png") no-repeat 0 0;
+}
+
+.return-back:hover.hover-back{
+    background: url("../images/back2.png") no-repeat 0 0;
+}
+/*特效部分*/
+.show-my{
+    width: 283px;
+    height: 288px;
+    position: absolute;
+    top: -198px;
+    left: -283px;
+    background: url("../images/showmy.png") no-repeat 0 0;
+    display: none;
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease ;
+    -ms-transition: 0.4s all ease ;
+    -o-transition: 0.4s all ease ;
+    transition: 0.4s all ease ;
+}

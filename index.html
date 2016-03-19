@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style></style>
+    <script></script>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/clearFix.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+</head>
+<body>
+<!--Boom!!! start-->
+<div class="boom" id="boom"></div>
+<!--boom!!! end-->
+<!--vadio start-->
+<div id="musicAll"></div>
+<!--<audio controls="controls" loop="loop" autoplay="autoplay" id="music">
+    <source src="gd.mp3" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>-->
+<!--vadio end-->
+<!--index&content start-->
+<div class="index">
+    <!--首页导航 start-->
+    <div class="navigation">
+        <!--logo&list-->
+        <div class="logo-list clearFix">
+            <div class="logo-div-a"></div>
+            <h1 class="logo">
+                <a href="index.html"></a>
+            </h1>
+            <ul class="list clearFix">
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/index.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/re.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/javascript.png" alt=""/>
+                    </a>
+                </li>
+                <li class="ma-40">
+                    <a href="javascript:;">
+                        <img src="images/h5.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--logo&list-->
+    </div>
+    <!--js 移入移出效果 未添加-->
+    <!--首页导航 end-->
+    <!--banner start-->
+    <div class="banner" id="banner">
+        <div class="le" id="oPrev">
+            <a href="javascript:;" class="_box"></a>
+        </div>
+        <div class="ri" id="oNext">
+            <a href="javascript:;" class="_box"></a>
+        </div>
+        <div class="banner_content" id="banner_content">
+            <a href="http://www.sina.com">
+                <img src="./images/12.jpg" alt="" style="opacity: 1;filter:alpha(opacity:100)"/>
+            </a>
+            <a href="http://www.456.com">
+                <img src="./images/13.jpg" alt=""/>
+            </a>
+            <a href="http://www.345.com">
+                <img src="./images/14.jpg" alt=""/>
+            </a>
+            <a href="http://www.123.com">
+                <img src="./images/15.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="arrow">
+            <ul class="arrow-t" id="arrow-t">
+                <li class="ar2"></li>
+                <li class="ar1"></li>
+                <li class="ar2"></li>
+                <li class="ar1"></li>
+            </ul>
+            <ul class="arrow-b" id="arrow-b">
+                <li class="ar2"></li>
+                <li class="ar1"></li>
+                <li class="ar2"></li>
+                <li class="ar1"></li>
+            </ul>
+        </div>
+        <ul class="btn-ul clearFix" id="btn-ul"><!--按钮-->
+            <li class="_active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--banner end-->
+    <!--返回顶部 start-->
+    <div class="return" id="return">
+        <div class="return-sh" id="return-sh"><!-- hover-sh--></div>
+        <!--二维码 start-->
+        <div class="show-my" id="show-my"></div>
+        <!--二维码 end-->
+        <div class="return-back hover-back">
+            <a href="#"></a>
+        </div>
+    </div>
+    <!--返回顶部 end-->
+</div>
+<!--index&content end-->
+</body>
+<script>
+    /*公用的js start*/
+    /*运动框架*/
+    function getStyle(obj, name) {
+        return (obj.currentStyle || getComputedStyle(obj, false))[name];
+    }
+    function startMove(obj, json, options) {
+        options = options || {};
+        options.duration = options.duration || 700;
+        options.easing = options.easing || 'ease-out';
+
+        var start = {};
+        var dis = {};
+        for (var name in json) {
+            start[name] = parseFloat(getStyle(obj, name));
+            if (isNaN(start[name])) {
+                switch (name) {
+                    case 'left':
+                        start[name] = obj.offsetLeft;
+                        break;
+                    case 'top':
+                        start[name] = obj.offsetTop;
+                        break;
+                    case 'width':
+                        start[name] = obj.offsetWidth;
+                        break;
+                    case 'height':
+                        start[name] = obj.offsetHeight;
+                        break;
+                    case 'opacity':
+                        start[name] = 1;
+                        break;
+                    case 'borderWidth':
+                        start[name] = 0;
+                        break;
+                }
+            }
+            dis[name] = json[name] - start[name];
+        }
+        var count = Math.floor(options.duration / 30);
+        var n = 0;
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            n++;
+            for (var name in json) {
+                switch (options.easing) {
+                    case 'linear':
+                        var cur = start[name] + dis[name] * n / count;
+                        break;
+                    case 'ease-in':
+                        var a = n / count;
+                        var cur = start[name] + dis[name] * Math.pow(a, 3);
+                        break;
+                    case 'ease-out':
+                        var a = 1 - n / count;
+                        var cur = start[name] + dis[name] * (1 - Math.pow(a, 3));
+                        break;
+                    default:
+                        var a = 1 - n / count;
+                        var cur = start[name] + dis[name] * (1 - Math.pow(a, 3));
+                        break;
+                }
+                if (name == 'opacity') {
+                    obj.style[name] = cur;
+                    obj.style.filter = 'alpha(opacity:' + cur * 100 + ')';
+                } else {
+                    obj.style[name] = cur + 'px';
+                }
+            }
+            if (n == count) {
+                clearInterval(obj.timer);
+                options.complete && options.complete();
+            }
+        }, 30);
+    }
+    function addReady(fn){
+        if(document.addEventListener){
+            document.addEventListener('DOMContentLoaded',fn,false);
+        }else{
+            document.attachEvent('onreadystatechange',function(){
+                if(document.readyState == 'complete'){
+                    fn&&fn();
+                }
+            });
+        }
+    }
+    function addEvent(obj,sEv,fn){
+        if(obj.addEventListener){
+            obj.addEventListener(sEv,fn,false);
+        }else{
+            obj.attachEvent('on'+sEv,fn);
+        }
+    }
+    function getPos(obj) {
+        var l = 0;
+        var t = 0;
+        while (obj) {
+            l += obj.offsetLeft;
+            t += obj.offsetTop;
+            obj = obj.offsetParent;
+        }
+        return {
+            left: l,
+            top: t
+        }
+    }
+    /*运动框架*/
+    /*公用的js end*/
+    /*arrow 箭头*/
+    ;(function () {
+        function roll(id) {
+            (function () {
+                var oUlArr = document.getElementById(id);
+                var aLi = oUlArr.children;
+                var timer = null;
+                timer = setInterval(function () {
+                    for (var i = 0; i < aLi.length; i++) {
+                        if (i % 2 == 0) {
+                            aLi[i].className = 'ar1';
+                        } else if (i % 2 == 1) {
+                            aLi[i].className = 'ar2';
+                        }
+                    }
+                    timer = setInterval(function () {
+                        for (var i = 0; i < aLi.length; i++) {
+                            if (i % 2 == 0) {
+                                aLi[i].className = 'ar2';
+                                clearInterval(timer)
+                            } else if (i % 2 == 1) {
+                                aLi[i].className = 'ar1';
+                                clearInterval(timer)
+                            }
+                        }
+                        clearInterval(timer)
+                    }, 1000);
+                }, 2000);
+            })();
+        }
+
+        roll('arrow-t');
+        roll('arrow-b');
+    })();
+    /*选项卡*/
+    ;(function () {
+        var oUl = document.getElementById('btn-ul');
+        var aLi = oUl.children;
+        var oDiv = document.getElementById('banner_content');
+        var aImg = oDiv.getElementsByTagName('img');
+        var oNext = document.getElementById('oNext');
+        var oPrev = document.getElementById('oPrev');
+        var oBanner = document.getElementById('banner');
+        var iNum = 0;
+        var timer = null;
+
+        function showThiw() {
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].className = '';
+                startMove(aImg[i], {opacity: 0}, {duration: 300}, {easing: 'ease-in'});
+            }
+            aLi[iNum].className = '_active';
+            startMove(aImg[iNum], {opacity: 1}, {duration: 300}, {easing: 'ease-in'});
+        }
+
+        for (var i = 0; i < aLi.length; i++) {
+            (function (index) {
+                aLi[i].addEventListener('click', function () {
+                    iNum = index;
+                    showThiw();
+                }, false);
+            })(i);
+        }
+
+        oNext.onclick = oNex;
+        function oNex() {
+            iNum++;
+            if (iNum > aLi.length - 1) {
+                iNum = 0;
+            }
+            showThiw();
+        }
+
+        clearInterval(timer);
+        timer = setInterval(oNex, 3000);
+
+        oBanner.addEventListener('mouseenter', function () {
+            clearInterval(timer);
+        }, false);
+
+        oBanner.addEventListener('mouseleave', function () {
+            timer = setInterval(oNex, 3000);
+        }, false);
+
+        oPrev.addEventListener('click', function () {
+            iNum--;
+            if (iNum < 0) {
+                iNum = aLi.length - 1;
+            }
+            showThiw();
+        }, false);
+    })();
+    /*回到顶部&shar*/
+    ;(function () {
+        var oShow = document.getElementById('return-sh');
+        var oShowMy = document.getElementById('show-my');
+        oShow.addEventListener('mouseenter', function () {
+            oShow.className = 'return-sh hover-sh';
+            oShowMy.style.display = 'block';
+            oShowMy.style.opacity = '1';
+        }, false);
+        oShow.addEventListener('mouseleave', function () {
+            oShow.className = 'return-sh ';
+            oShowMy.style.opacity = '0';
+            setTimeout(function () {
+                oShowMy.style.display = 'none';
+            }, 200);
+        }, false);
+    })();
+    /*爆炸+回到顶部追加效果*/
+    ;(function () {
+        function rnd(n, m) {
+            return Math.floor(n + Math.random() * (m - n));
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var oBox = document.querySelector('.boom');
+            var oBody = document.body;
+            oBody.style.overflow = 'hidden';
+            var R = 6;
+            var C = 12;
+            for (var i = 0; i < R; i++) {
+                for (var j = 0; j < C; j++) {
+                    var oS = document.createElement('span');
+                    oS.style.width = oBox.offsetWidth / C + 'px';
+                    oS.style.height = oBox.offsetHeight / R + 'px';
+                    oBox.appendChild(oS);
+                    oS.style.left = j * oS.offsetWidth + 'px';
+                    oS.style.top = i * oS.offsetHeight + 'px';
+                    oS.style.backgroundPosition = '-' + j * oS.offsetWidth + 'px -' + i * oS.offsetHeight + 'px';
+                }
+            }
+            var iNow = 0;
+            var bOk = false;
+            oBox.onclick = function () {
+                var oReturn = document.getElementById('return');     /*这个是返回顶部*/
+                if (bOk)return;
+                bOk = true;
+                iNow++;
+                var aS = document.querySelectorAll('.boom span');
+                for (var i = 0; i < aS.length; i++) {
+                    aS[i].style.WebkitTransition = '1.3s all ease-out';
+                    aS[i].style.MozTransition = '1.3s all ease-out';
+                    var disX = aS[i].offsetLeft + aS[i].offsetWidth / 2 - oBox.offsetWidth / 2;
+                    var disY = aS[i].offsetTop + aS[i].offsetHeight / 2 - oBox.offsetHeight / 2;
+                    aS[i].style.WebkitTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)';
+                    aS[i].style.MozTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)';
+                    aS[i].style.opacity = 0;
+                    oBody.style.overflow = '';
+                }
+                aS[aS.length - 1].addEventListener('transitionend', function () {
+                    for (var i = 0; i < aS.length; i++) {
+                        oBox.style.display = 'none';
+                        aS[i].style.WebkitTransition = 'none';
+                        aS[i].style.opacity = 0;
+                        aS[i].style.WebkitTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
+                        aS[i].style.MozTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
+                        aS[i].style.mskitTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
+                    }
+                    bOk = false;
+                    document.addEventListener('transitionend',function (){
+                        oReturn.style.WebkitTransition= '1s all ease';
+                        oReturn.style.right = '10px';
+                        oReturn.style.WebkitBoxShadow= '1px 1px 10px red';
+                        oReturn.style.MozBoxShadow= '1px 1px 10px red';
+                        oReturn.style.boxShadow= '1px 1px 10px red';
+                        oReturn.style.bottom = '15px';
+                    },false);
+                }, false);
+            };
+            oBox.addEventListener('click',function (){
+                var oMusicAll = document.getElementById('musicAll');
+                //var oO = document.createElement('div');
+                //oO.setAttribute('title','中文');  我只是忽然忘记了setAttribute 怎么玩了而已
+                oMusicAll.innerHTML = '<audio controls="controls" loop="loop" autoplay="autoplay" id="music"><source src="gd.mp3" type="audio/ogg">Your browser does not support the audio tag.</audio>';
+                //oMusicAll.appendChild(oO);
+            },false);
+        }, false);
+    })();
+    /*banner 跟随*/
+    ;(function (){
+        addReady(function (){
+            addEvent(document,'mousemove',function (ev){
+                var oEvent = ev || event;
+                var disX = oEvent.clientX*0.01;
+                var disY = oEvent.clientY*0.01;
+                var oB = document.getElementById('banner');
+                var oB_offL = oB.offsetLeft;
+                var oB_offT = oB.offsetTop;
+                oB.style.left = (disX+oB_offL*0.1)+'px';
+                oB.style.top = (disY+oB_offT*0.1)+'px';
+                /*console.log(oB)*/
+            });
+        })
+    })();
+</script>
+
+</html>
