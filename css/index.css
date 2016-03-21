@@ -60,7 +60,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 1349px;
+    width: 100%;
+    min-width:1200px;
     height: 84px;
     opacity: 0.6;
     background: -webkit-linear-gradient(-45deg,#31004a 60px,transparent 61px,transparent 80px,#31004a 80px);
