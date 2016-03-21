@@ -22,13 +22,14 @@
     z-index:9999;
     -webkit-transform-style:preserve-3d;
     perspective:800px;
-
 }
 .boom span{
-    position:absolute;
-    background: url("../images/come.png") no-repeat;
+    position:absolute;/*
+    background: url("../images/come.png") no-repeat;*/  /*背景图爆炸*/
+    background:rgba(204,204,204,0.6);
     -webkit-transform:translate(0,0) rotateX(0deg) rotateY(0deg);
 }
+
 /*爆炸 end*/
 
 /*navigation start*/

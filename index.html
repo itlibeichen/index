@@ -221,8 +221,29 @@
             top: t
         }
     }
+    function rnd(m,n){
+        return parseInt(m+Math.random()*(n-m));
+    }
     /*运动框架*/
     /*公用的js end*/
+    /*每次刷新页面的时候让srcollTop = 0*/   /*初步调整完毕*/
+    ;(function (){
+        addReady(function (){
+            var timer = null;
+            var oH = document.documentElement.scrollTop || document.body.scrollTop;
+            if(oH>300){
+                //clearInterval(timer);
+                timer = setInterval(function(){
+                    document.documentElement.scrollTop = document.body.scrollTop -=100;
+                    if((document.documentElement.scrollTop || document.body.scrollTop) <=0){
+                        document.documentElement.scrollTop = document.body.scrollTop = 0;
+                        clearInterval(timer);
+                    }
+                    console.log(oH);
+                },16);
+            }
+        });
+    })();
     /*arrow 箭头*/
     ;(function () {
         function roll(id) {
@@ -334,20 +355,17 @@
     })();
     /*爆炸+回到顶部追加效果*/
     ;(function () {
-        function rnd(n, m) {
-            return Math.floor(n + Math.random() * (m - n));
-        }
         document.addEventListener('DOMContentLoaded', function () {
             var oBox = document.querySelector('.boom');
-            var oBody = document.body;
-            oBody.style.overflow = 'hidden';
-            var R = 6;
+            var oBody = document.body;              /*有改动 2016.3.21*/
+            oBody.style.overflow = 'hidden';      /*有改动 2016.3.21*/
+            var R = 4;
             var C = 12;
             for (var i = 0; i < R; i++) {
                 for (var j = 0; j < C; j++) {
                     var oS = document.createElement('span');
-                    oS.style.width = oBox.offsetWidth / C + 'px';
-                    oS.style.height = oBox.offsetHeight / R + 'px';
+                    oS.style.width = (oBox.offsetWidth / C)*1.1 + 'px';
+                    oS.style.height = (oBox.offsetHeight / R)*1.1 + 'px';
                     oBox.appendChild(oS);
                     oS.style.left = j * oS.offsetWidth + 'px';
                     oS.style.top = i * oS.offsetHeight + 'px';
@@ -363,12 +381,13 @@
                 iNow++;
                 var aS = document.querySelectorAll('.boom span');
                 for (var i = 0; i < aS.length; i++) {
-                    aS[i].style.WebkitTransition = '1.3s all ease-out';
-                    aS[i].style.MozTransition = '1.3s all ease-out';
+                    aS[i].style.WebkitTransition = '1s all ease-out';
+                    aS[i].style.MozTransition = '1s all ease-out';
+                    aS[i].style.background = 'red';
                     var disX = aS[i].offsetLeft + aS[i].offsetWidth / 2 - oBox.offsetWidth / 2;
                     var disY = aS[i].offsetTop + aS[i].offsetHeight / 2 - oBox.offsetHeight / 2;
-                    aS[i].style.WebkitTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)';
-                    aS[i].style.MozTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)';
+                    aS[i].style.WebkitTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)'+'translateZ(120px)';
+                    aS[i].style.MozTransform = 'translate(' + disX + 'px,' + disY + 'px) rotateX(' + rnd(-720, 720) + 'deg) rotateY(' + rnd(-720, 720) + 'deg)'+'translateZ(120px)';
                     aS[i].style.opacity = 0;
                     oBody.style.overflow = '';
                 }
@@ -377,13 +396,14 @@
                         oBox.style.display = 'none';
                         aS[i].style.WebkitTransition = 'none';
                         aS[i].style.opacity = 0;
-                        aS[i].style.WebkitTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
-                        aS[i].style.MozTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
-                        aS[i].style.mskitTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg)';
+                        aS[i].style.WebkitTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+                        aS[i].style.MozTransform = 'translate(0,0) rotateX(0deg) rotateY(0deg) translateZ(0px)';
                     }
                     bOk = false;
                     document.addEventListener('transitionend',function (){
                         oReturn.style.WebkitTransition= '1s all ease';
+                        oReturn.style.MozTransition= '1s all ease';
+                        oReturn.style.msTransition= '1s all ease';
                         oReturn.style.right = '10px';
                         oReturn.style.WebkitBoxShadow= '1px 1px 10px red';
                         oReturn.style.MozBoxShadow= '1px 1px 10px red';
@@ -406,14 +426,13 @@
         addReady(function (){
             addEvent(document,'mousemove',function (ev){
                 var oEvent = ev || event;
-                var disX = oEvent.clientX*0.01;
-                var disY = oEvent.clientY*0.01;
+                var disX = oEvent.clientX*0.005;
+                var disY = oEvent.clientY*0.005;
                 var oB = document.getElementById('banner');
                 var oB_offL = oB.offsetLeft;
                 var oB_offT = oB.offsetTop;
-                oB.style.left = (disX+oB_offL*0.1)+'px';
-                oB.style.top = (disY+oB_offT*0.1)+'px';
-                /*console.log(oB)*/
+                oB.style.left = (disX+oB_offL*0.01)+'px';
+                oB.style.top = (disY+oB_offT*0.01)+'px';
             });
         })
     })();
