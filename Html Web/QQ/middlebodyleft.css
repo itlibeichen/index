@@ -1,0 +1,378 @@
+/*这个是中间左边*/
+.middlebodyleft {
+    width: 700px;
+    height: 2181px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+.middlebodyzaixian {
+    width: 700px;
+    height: 330px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    margin: 20px 0 0;
+}
+
+.middlebodyzaixian h2 {
+    float: left;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    font-family: 宋体;
+}
+
+.middlebodyzaixian i {
+    height: 22px;
+    font-style: normal;
+    border: 3px solid;
+    border-color: #ff0000;
+    float: left;
+}
+
+.middlebodyzaixian span {
+    float: left;
+    margin-top: 9px;
+    margin-left: 2px;
+    color: green;
+    font-family: 宋体;
+    display: inline;
+}
+
+.middlebodyzaixian ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.middlebodyzaixian li {
+    list-style: none;
+    float: left;
+    display: block;
+    padding: 10px 1px 0px 8px;
+
+}
+
+.middlebodyzaixian li img {
+    border: 0;
+}
+
+.middlebodyzaixian1 {
+    width: 700px;
+    height: 30px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+
+}
+
+.mvshoubo {
+    width: 700px;
+    height: 395px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    /*margin-top: 5px;*/
+    margin: 20px 0 0;
+}
+
+.mvshoubo img {
+    border: 0;
+}
+
+.mvshoubo1 {
+    width: 700px;
+    height: 30px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.mvshoubo h2 {
+    float: left;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    font-family: 宋体;
+}
+
+.mvshoubo i {
+    height: 22px;
+    font-style: normal;
+    border: 3px solid;
+    border-color: #ff7800;
+    float: left;
+}
+
+.mvshoubo span {
+    float: left;
+    margin-top: 9px;
+    margin-left: 2px;
+    color: green;
+    font-family: 宋体;
+    display: inline;
+}
+
+.mvshoubo ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mvshoubo li {
+    width: 160px;
+    height: 170px;
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    margin: 5px 5px 5px 10px;
+}
+
+.mvshoubo li p {
+    margin: 9px 0 0 0;
+    padding: 0;
+    color: #8b8b8b;
+}
+
+.mvshoubo ul li p i {
+    border: 0;
+    color: #0c8f44;
+}
+
+.mvshoubo li em {
+    float: right;
+    margin: 3px 0 0 0;
+    color: #c0c0c0;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.mvshoubo li span {
+    margin: 5px 0 0 0;
+    color: #c0c0c0;
+    font-size: 13px;
+}
+
+/*最新推荐大块儿*/
+.zuixintuijian {
+    width: 700px;
+    height: 482px;
+    margin: 20px 0 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+/*最新推荐左边块*/
+.tuijianzuo {
+    width: 348px;
+    height: 482px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: left;
+    overflow: hidden;
+}
+
+.tuijianzuo1 {
+    width: 348px;
+    height: 30px;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+
+.tuijianzuo1 h2 {
+    float: left;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    font-family: 宋体;
+}
+
+.tuijianzuo1 i {
+    height: 22px;
+    font-style: normal;
+    border: 3px solid;
+    border-color: #0dad51;
+    float: left;
+}
+
+.tuijianzuo1 span {
+    float: right;
+    margin-top: 6px;
+    margin-right: 8px;
+    color: #008000;
+    font-family: 宋体;
+    display: inline;
+    font-size: 15px;
+}
+
+.tuijianzuo1 a {
+    text-decoration: none;
+    color: #0c8f44;
+}
+
+.tuijianzuo1 a:hover {
+    color: #333333;
+}
+
+.tuijianzuo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+.tuijianzuo ul li {
+    margin: 9px 0px 0px;
+    padding: 8px 0px 0px;
+    border: 1px solid transparent;
+    font-size: 13px;
+
+}
+
+.tuijianzuo ul li a {
+    text-decoration: none;
+    color: #0dad51;
+    margin-left: 15px;
+}
+
+.tuijianzuo ul li a i {
+    font-style: normal;
+    color: #515151;
+}
+
+/*最新推荐右边块*/
+.tuijianyou {
+    width: 348px;
+    height: 482px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    border-color: transparent transparent transparent #e5e5e5;
+    float: right;
+}
+
+.tuijianyou1 {
+    width: 348px;
+    height: 30px;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+
+.tuijianyou1 h2 {
+    float: left;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    font-family: 宋体;
+}
+
+.tuijianyou1 i {
+    height: 22px;
+    font-style: normal;
+    border: 3px solid;
+    border-color: #0dad51;
+    float: left;
+}
+
+.tuijianyou1 span {
+    float: right;
+    margin-top: 6px;
+    margin-right: 8px;
+    color: #008000;
+    font-family: 宋体;
+    display: inline;
+    font-size: 15px;
+}
+
+.tuijianyou1 a {
+    text-decoration: none;
+    color: #0c8f44;
+}
+
+.tuijianyou1 a:hover {
+    color: #333333;
+}
+
+.tuijianyou ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+.tuijianyou ul li {
+    margin: 9px 0px 0px;
+    padding: 8px 0px 0px;
+    border: 1px solid transparent;
+    font-size: 13px;
+}
+
+.tuijianyou ul li a {
+    text-decoration: none;
+    color: #0dad51;
+    margin-left: 15px;
+}
+
+.tuijianyou ul li a i {
+    font-style: normal;
+    color: #515151;
+}
+
+.jingxuanji {
+    width: 700px;
+    height: 482px;
+    margin: 20px 0 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: right;
+    overflow: hidden;
+}
+
+.jingxuanji1 {
+    width: 700px;
+    height: 30px;
+    /*border:1px solid red;*/
+    overflow: hidden;
+}
+
+.jingxuanji h2 {
+    float: left;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    font-family: 宋体;
+}
+
+.jingxuanji i {
+    height: 22px;
+    font-style: normal;
+    border: 3px solid;
+    border-color: #f3508d;
+    float: left;
+}
+
+.jingxuanji ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jingxuanji li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 9px;
+}
+
+.jingxuanji p {
+    font-size: 13px;
+    color: #0c8f44;
+}
+
+.jingxuanji #bianhua {
+    color: #8b8b8b;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.jingxuanji img {
+    border: none;
+}

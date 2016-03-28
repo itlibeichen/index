@@ -1,0 +1,200 @@
+.NavBar{
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid transparent;
+}
+
+.NavBar img{
+    float: left;
+    margin: 31px 0;
+}
+
+.NavBar_a{
+    float: left;
+    width: 60px;
+    height: 34px;
+    margin: 25px 0 0 150px;
+}
+
+.NavBar_a ul{
+    list-style: none;
+    margin: 0;
+}
+
+.NavBar_a ul li{
+    float: left;
+    display: block;
+    width: 400px;
+}
+
+.NavBar_1{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid transparent;
+    background: url("./imgs/daohang.png");
+}
+
+.NavBar_2{
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.NavBar_2 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.NavBar_2 ul li{
+    float: left;
+}
+
+.NavBar_2 ul li a{
+    display: inline-block;
+    margin: 10px 0 0 2px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 微软雅黑;/*这里没有激活文字,(导航栏中的文字)*/
+}
+
+.NavBar_2 ul li a:hover .class{
+    display:block;
+}
+
+.NavBar_aSel{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 34px;
+    text-align:center;
+    border-color: #dddddd;
+    box-shadow: none;
+    color: #79a2bd;
+}
+
+.NavBar_atext{
+    display: block;
+    float: left;
+    width: 248px;
+    height: 28px;
+    color: #dddddd;
+}
+
+.NavBar_abutt{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 34px;
+    color: white;
+    background-color: #4fa7b5;
+    border: none;
+}
+
+.NavBar_b{
+    width: 305px;
+    height: 20px;
+    margin: 70px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.NavBar_b ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.NavBar_b ul li{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #929292;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+
+.NavBar_b ul li a{
+    text-decoration: none;
+    color: #929292;
+}
+
+.NavBar_c{
+    width: 84px;
+    height: 19px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    float: right;
+    text-align: center;
+}
+
+.NavBar_c ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.NavBar_c ul li{
+    float: left;
+}
+
+.NavBar_c ul li a{
+    text-decoration: none;
+    border: 1px solid;
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    line-height: 15px;
+    border-color: transparent transparent transparent transparent;
+    font-size: 13px;
+    color: #333333;
+}
+
+.NavBar_c ul li a.NavBar_2biaoji{
+    height: 15px;
+    width: 40px;
+    border: 1px solid;
+    border-color: transparent transparent transparent #e1e9f5;
+    line-height: 15px;
+}
+
+/*<!--以下是下拉框，鼠标滑过的效果-->*/
+
+.NavBar_2_1 ul{
+    margin:0;
+    padding:0;
+    display: block;
+    border: 1px solid red;
+    height: 130px;
+    width: 80px;
+    float: left;
+    position: absolute;
+    top: 41px;
+    left: -2px;
+}
+
+.NavBar_2_1 ul li{
+    width: 80px;
+    height: 31px;
+    border: 1px solid red;
+    color: black;
+}
+
+.NavBar_2_1 ul{
+    display: none;
+}
+
+.NavBar_2_0:hover .NavBar_2_1 ul{
+    display: block;
+}

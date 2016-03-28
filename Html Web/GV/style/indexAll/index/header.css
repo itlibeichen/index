@@ -1,0 +1,50 @@
+.index{
+    width:100%;
+}
+.header{
+    min-width: 1080px;
+    height: 85px;
+    margin:0 auto;
+    border-bottom: 1px solid #dadada;
+}
+.header_mar{
+    height: 85px;
+    width:1080px;
+    margin:0 auto;
+}
+.logo{
+    background: url("../../../images/gv-black.png") no-repeat 0 0;
+    width: 130px;
+    height:85px;
+    /*text-indent 会触发a标签丢失*/
+    float: left;
+}
+.logo strong{
+    visibility: hidden;
+}
+.header_mar_ul{
+    float: left;
+    height: 85px;
+}
+.header_mar_ul li{
+    float: left;
+    width: 96px;
+    height: 85px;
+    margin:0 0 0 0;
+    font-size: 16px;
+    line-height: 85px;
+    text-align: center;
+    position: relative;
+}
+.box{
+    width: 0px;
+    height: 5px;
+    background: rgb(100,100,0);
+    position: absolute;
+    top: 75%;
+    left: 0;
+}
+.header_mar_ul li a{
+    color: #787878;
+    display: block;
+}

@@ -1,0 +1,219 @@
+.banner{
+    height:572px;
+    width: 100%;
+    background: url('images/2.jpg') no-repeat center top ;
+}
+
+.banner .banner_box{
+    width: 1198px;
+    height:572px;
+    margin: 0 auto;
+}
+
+.banner_box_left{
+    width: 238px;
+    height: 570px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_box_left ul li{
+    float: left;
+    width: 198px;
+    height: 114px;
+    background: #fff6ef;
+    padding: 0 20px;
+}
+
+.banner_box_left ul li h3{
+    width: 175px;
+    font-size: 16px;
+    color: #ff6699;
+    font-weight: bold;
+    padding-left: 23px;
+    background: url("images/huo.png") no-repeat left center;
+    margin-top: 4px;
+}
+
+.banner_box_left_list{
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px dotted #cccccc;
+    height: 82px;
+    margin: 3px 0 0 0;
+}
+
+.banner_box_left_list_bottom_none{
+    border-bottom: none;
+}
+
+.banner_box_left ol.banner_box_left_list li{
+    float: left;
+    width: 196px;
+    height: 23px;
+    padding: 0;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.banner_box_left ol.banner_box_left_list span{
+    display: block;
+    width: 5px;
+    height: 9px;
+    position: absolute;
+    right: -11px;
+    top: 4px;
+}
+
+.banner_box_left_bing{
+    position: relative;
+    z-index: 10;
+}
+
+.banner_box_left_bing a{
+    color: #666666;
+}
+
+.banner_box_left_bing a:hover{
+    color: #ff6699;
+}
+
+.banner_box_left_none{
+    width: 350px;
+    height: 300px;
+    background: #ff6699;
+    position: absolute;
+    right: -351px;
+    top: -1px;
+    display:none;
+    z-index: 5;
+}
+
+.banner_box_left .banner_box_left_bing:hover span{    /*滑动span变粉色*/
+    color: #c32254;
+}
+
+.banner_box_left .banner_box_left_bing:hover div.banner_box_left_none{
+    display: block;
+}
+
+.banner_box_right{     /*banner打的div*/
+    width: 958px;
+    height: 572px;
+    /*background: #999999;*/
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_box_right_top {
+    width: 958px;
+    height: 419px;
+    /*background: #ffe119;*/
+    position: relative;
+}
+
+.banner_box_right_top .banner_box_right_top_arrow_l{
+    width: 35px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background: #cccccc;
+    position: absolute;
+    top: 50%;
+    display: none;
+}
+
+.banner_box_right_top .banner_box_right_top_arrow_r{
+    width: 35px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background: #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 727px;
+    display: none;
+}
+
+.banner_box_right_top:hover .banner_box_right_top_arrow_l,.banner_box_right_top:hover .banner_box_right_top_arrow_r{
+    display: block;
+    opacity:0.7;
+    filter:alpha(opacity:70);
+    cursor: pointer;
+}
+
+.banner_box_right_top_pic{
+    width: 205px;
+    height: 20px;
+    line-height: 20px;
+    /*background: #000;*/
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+}
+
+.banner_box_right_top_pic a{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+    background: white;
+    /*margin-right: 25px;*/
+    margin: 5px 25px 0 0;
+}
+
+.banner_box_right_top_pic a.active{
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    margin: 2px 25px 0 0;
+    background: transparent;
+}
+
+.banner_box_right_bottom{
+    width: 200px;
+    height: 416px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.banner_box_right_bottom ul li{
+    height: 140px;
+}
+
+.banner_box_right_bottom ul li img{
+    border-bottom: 1px solid #cccccc;
+    margin: 0;
+}
+
+.banner_box_right_bottom dl{
+    width: 958px;
+    height: 143px;
+    position: absolute;
+    left: -757px;
+    padding: 10px 0 0 9px;
+}
+
+.banner_box_right_bottom dl dd img{
+    display: block;
+}
+
+.banner_box_right_bottom dl dd{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+
+}

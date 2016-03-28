@@ -1,0 +1,225 @@
+.content {
+    /*height: 2710px;*/
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-bg-3 {
+    width: 492px;
+    height: 810px;
+    background: url("../../../images/team.png") no-repeat;
+    position: absolute;
+    top: -50px;
+    left: 513px;
+}
+
+/**/
+
+.content-text {
+    width: 1080px;
+}
+
+.content-text h2 {
+    font-size: 52px;
+    font-weight: bold;
+    padding: 285px 0 0 0;
+}
+
+.context-review {
+    width: 500px;
+    padding: 67px 0 0;
+    font-size: 18px;
+}
+
+.content-text_ul li.one {
+    height: 60px;
+    margin: 20px 0 28px 0;
+    background: url("../.././../images/bill.png") no-repeat;
+}
+
+.nameBill {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+
+.ceo {
+    font-size: 17px;
+    color: #757575;
+}
+
+.content-list {
+    width: 395px;
+    height: 165px;
+    font-size: 16px;
+    margin: 48px 0 0 0;
+}
+
+.content-list li {
+    list-style: disc;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.content-list li a {
+    color: #f93b2a;
+}
+
+.content-list-ul-l {
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+.content-list-ul-r {
+    float: left;
+    margin: 0 0 0 79px;
+}
+
+.team-file {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.team-file img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.img-header {
+    height: 116px;
+    width: 100%;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+
+.img-header img {
+    float: left;
+}
+
+.the-team {
+    width: 521px;
+}
+
+.team-Info {
+    float: left;
+    padding: 25px 0 0 25px;
+}
+
+.team-Info h5 {
+    font-size: 16px;
+    color: #f93b2a;
+    font-weight: bold;
+}
+
+.team-file p {
+    font-weight: bold;
+    color: #212121;
+}
+
+.team-file span {
+    color: #757575;
+}
+
+.the-team-ul {
+    width: 1080px;/*
+    overflow: hidden;*/
+}
+
+.the-team-ul li {
+    width: 348px;
+    float: left;
+}
+
+.team-Info-way {
+    width: 220px;
+    float: left;
+    padding: 25px 0 0 25px;
+}
+
+.team-Info-way h5 {
+    font-size: 16px;
+    color: #f93b2a;
+    font-weight: bold;
+}
+
+.team-Info-way p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content-Info {
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    overflow: hidden;
+}
+
+.content-Info-per {
+    /*overflow: hidden;*/
+    width: 1080px;
+    margin: 80px auto 25px;
+}
+
+.cont-flims {
+    width: 345px;
+    float: left;
+}
+
+.cont-flims h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+.cont-flims .p1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 38px 0 0 0;
+}
+
+.cont-flims .p2 {
+    text-indent: 1em;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.content-Infom {
+    float: right;
+    width: 735px;
+}
+
+.content-Infom li {
+    float: left;
+    width: 345px;
+    margin: 0 0 0 20px;
+}
+
+.content-Infom li img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+/*黑白开始*/
+.Imges-gar img{
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+}
+/*黑白结束*/
+
+/*box2*/
+.box2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border: 5px solid red;
+    border-radius: 50%;
+    display: none;
+}

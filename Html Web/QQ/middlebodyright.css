@@ -1,0 +1,252 @@
+.middlebodyright {
+    width: 221px;
+    height: 2181px;
+    margin: 0 21px 0 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: right;
+}
+
+.middlebodyrighttop {
+    width: 221px;
+    height: 283px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+.middlebodyrighttop .zhoujielun {
+    border: none;
+    margin: 18px 0 0;
+    width: 221px;
+}
+
+.middlebodyrighttop1 {
+    width: 221px;
+    height: 136px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    border-color: transparent transparent #e4e4e4 transparent;
+}
+
+.middlebodyrighttop1 span {
+    font-size: 30px;
+    color: #e4e4e4;
+    margin-left: 7px;
+}
+
+.middlebodyrighttop1 img {
+    border: none;
+    box-shadow: 0 0 10px #e7e7e7;
+}
+
+.middlebodyrighttop1 a {
+    height: 45px;
+    display: inline-block;
+    padding: 0;
+    margin: 20px 24px;
+}
+
+.middlebodyrighttop2 {
+    width: 221px;
+    height: 458px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+.middlebodyrighttop2_dianfeng {
+    width: 220px;
+    height: 31px;
+    margin: 0;
+    padding: 0;
+}
+
+.middlebodyrighttop2_dianfeng span {
+    display: inline-block;
+    margin-top: 4px;
+    color: #8d8d8d;
+    font-size: 18px;
+}
+
+.middlebodyrighttop2_liuxingzhishu {
+    width: 220px;
+    height: 325px;
+    margin: 0;
+    padding: 0;
+    border: 1px dotted;
+    border-color: transparent transparent #323232 transparent;
+}
+
+.middlebodyrighttop2_liuxingzhishu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline-block;
+}
+
+.middlebodyrighttop2_liuxingzhishu ul li {
+    display: inline-block;
+    font-size: 13px;
+    border: 1px solid;
+    border-color: transparent transparent transparent #d8d8d8;
+    padding-left: 4px;
+}
+
+.middlebodyrighttop2_liuxingzhishu ul li a {
+    text-decoration: none;
+    color: #0c8f63;
+}
+
+#middlebodyrighttop2_liebiao ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+#middlebodyrighttop2_liebiao ul i {
+    font-style: normal;
+    color: #000;
+    float: right;
+}
+
+#middlebodyrighttop2_liebiao ul li {
+    width: 210px;
+    display: inline-block;
+    margin-top: 11px;
+    color: #0c8f44;
+    border: none;
+}
+
+#middlebodyrighttop2_liebiao ul li a:hover {
+    color: #000;
+
+}
+
+.middlebodyrighttop2_gong {
+    font-size: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.middlebodyrighttop2_gong li {
+    float: left;
+    font-size: 13px;
+    margin: 13px 8px 0 0;
+}
+
+.middlebodyrighttop2_gong a {
+    text-decoration: none;
+    color: #515151;
+}
+
+.middlebodyrighttop3 {
+    width: 220px;
+    height: 330px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.middlebodyrighttop3_1 {
+    width: 220px;
+    height: 40px;
+    /*border: 1px solid red;*/
+}
+
+.middlebodyrighttop3_1 h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.middlebodyrighttop3_1 h2 span {
+    font-size: 14px;
+    color: #0c8f44;
+
+}
+
+.middlebodyrighttop3_2 {
+    width: 220px;
+    height: 179px;
+    border: 1px dotted;
+    border-color: transparent transparent #c6c6c6 transparent;
+
+}
+
+.middlebodyrighttop3_2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.middlebodyrighttop3_2 ul li {
+    float: left;
+    margin: 10px 23px 0 0;
+
+}
+
+.middlebodyrighttop3_2 ul li p {
+    margin: 0;
+    padding: 0;
+    color: #0c8f44;
+    font-size: 13px;
+}
+
+.middlebodyrighttop3_gong {
+    font-size: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.middlebodyrighttop3_gong li {
+    float: left;
+    font-size: 13px;
+    margin: 13px 8px 0 0;
+}
+
+.middlebodyrighttop3_gong a {
+    text-decoration: none;
+    color: #515151;
+}
+
+.middlebodyrighttop4 {
+    width: 220px;
+    height: 333px;
+    border: 1px solid;
+    border-color: #dbdbdb transparent #dbdbdb transparent;
+}
+
+.middlebodyrighttop4 h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.middlebodyrighttop4 ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.middlebodyrighttop4 li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.middlebodyrighttop4 li img {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.middlebodyrighttop4 li p {
+    margin: 5px 0 0 0;
+    padding: 0;
+    color: #0c8f44;
+    font-size: 15px;
+}

@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<mate name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--这一句的代码是bootsp的浏览器适配问题解决方案-->
+    <title></title>
+    <script>
+        window.onload = function(ev){
+            var oBox = document.getElementById('box');
+            alert(oBox);
+
+        };
+    </script>
+    <style type="text/css">
+
+        .main{
+            width: 1005px;
+            height: 2787px;
+            margin: 0 auto;
+            padding: 0;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+        }
+
+        .maintop{
+            width: 1005px;
+            height: 404px;
+            /*border: 1px solid red;*/
+            margin: 15px 0 0 0;
+            padding:0;
+        }
+
+        .maintop img{
+            float: left;
+            margin: 1px;
+        }
+
+        .mainleftone{
+            width: 763px;
+            height: 526px;
+            float: left;
+            overflow: hidden;
+            /*border: 1px solid red;*/
+
+        }/*<!--这里是摄影技巧整体部分-->*/
+
+        .mainleftone1{
+            width: 763px;
+            height: 19px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+        }/*<!--标题部分-->*/
+
+        .mainleftone1 i{
+            font-style: normal;
+            border: 4px solid;
+            border-color: #4fa7b5;
+            float: left;
+            height: 17px;
+        }
+        
+        .mainleftone1 h3{
+            font-size: 16px;
+            margin: 0 0 0 10px;
+            padding: 0;
+            display: inline-block;
+            float: left;
+        }
+
+        .mainleftone1 ul{
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .mainleftone1 ul li{
+            float: left;
+            font-size: 12px;
+            margin: 2px 0 0 15px;
+            color: #888888;
+        }
+
+        .mainleftone1 ul li a{
+            text-decoration: none;
+            color: #888888;
+            border: 2px solid;
+            border-color: transparent ;
+        }
+
+        .mainleftone1 ul li a:hover{
+            border: 2px solid;
+            border-color: #4fa7b5 transparent transparent transparent;
+        }
+
+        .mainleftone1 span{
+            display: inline-block;
+            margin-left: 50px;
+            color: #4fa7b5;
+            font-size: 14px;
+            float: right;
+        }
+
+        .mainleftone1 span a{
+            text-decoration: none;
+            color: #4fa7b5;
+            font-family:微软雅黑;
+        }
+
+        .mainleftone1 span a:hover{
+            text-shadow: 0 0 1px Gold;
+        }
+
+        .mainleftone1 ul .mainleftone1_mar{
+            margin-left: 44px;
+        }
+
+        .mainleftone2{
+            width: 763px;
+            height: 488px;
+            margin: 18px 0 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+        }
+
+        .mainleftone2_1{
+            display: inline;
+            width: 375px;
+            height: 240px;
+            margin:0 2px 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            float: left;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .mainleftone2_1_top{
+            width: 352px;
+            height: 118px;
+            border: 1px solid;
+            border-color: transparent transparent #dddddd transparent;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .mainleftone2_1_top img{
+            height: 80px;
+            display: inline;
+            margin: 8px;
+            float: left;
+        }
+
+        .mainleftone2_1_top ul{
+            width: 232px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            float: left;
+        }
+
+        .mainleftone2_1_top li {
+            display: block;
+            float: left;
+            font-size: 13px;
+            color: #4fa7b5;
+        }
+
+        .mainleftone2_1_top li h4{
+            margin: 0;
+            padding: 5px;
+            color: #333;
+            font-size: 15px;
+        }
+
+        .mainleftone2_1_top li a{
+            text-decoration: none;
+            font-size: 13px;
+            color: #4fa7b5;
+        }
+
+        .mainleftone2_1_top li span{
+            display: block;
+            margin-top:15px;
+            padding: 5px;
+            color: #929292;
+        }
+
+        i img.mainleftone2_1_topimg{
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            margin: 3px 5px;
+            padding:0;
+        }
+
+        .mainleftone2_1_bottom{
+            width: 352px;
+            height: 118px;
+           /* border: 1px solid red;*/
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .mainleftone2_1_bottom_1{
+            margin-left: -10px;
+        }
+
+        .mainleftone2_1_bottom h4 {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 13px;
+            font-family: sans-serif;
+            color: #929292;
+        }
+
+        .mainleftone2_1_bottom ul{
+            margin: 10px 0 0 0;
+            list-style: none;
+        }
+
+        .mainleftone2_1_bottom ul li{
+            float: left;
+            font-size: 13px;
+        }
+
+        .mainleftone2_1_bottom ul li.mainleftone2_1_bottom_1{
+            margin: 14px 40px 0 -32px;
+            color: #333333;
+            font-family: 微软雅黑;
+        }
+
+        ul li.mainleftone2_1_bottom_1 a{
+            text-decoration: none;
+            color: #333333;
+            font-size: 12px;
+        }
+
+        .mainleftone2_2{
+            width: 375px;
+            height: 240px;
+            margin:0 2px 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            float: left;
+        }
+
+        .mainleftone2_3{
+            width: 375px;
+            height: 240px;
+            margin:0 2px 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            float: left;
+            overflow: hidden;
+        }
+
+        .mainleftone2_4{
+            width: 375px;
+            height: 240px;
+            margin:0 2px 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            float: left;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+
+        .mainrightone{
+            width: 220px;
+            height: 516px;
+            /*border: 1px solid red;*/
+            float: right;
+            overflow: hidden;
+        }/*右边部分整体的div*/
+
+        .mainrightone h3{
+            margin: 0;
+            padding: 0 0 0 5px;
+            float: left;
+            border-left: 7px solid #4fa7b5;
+            height: 19px;
+            line-height: 19px;
+            font-size: 18px;
+            font-family:微软雅黑;
+        }
+
+        .mainrightone span{
+            margin: 0px 0 0;
+            padding: 0;
+            float: right;
+            font-size: 15px;
+            color: #4fa7b5;
+            font-family:微软雅黑;
+        }
+
+        .mainrightone ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainrightone ul li{
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+        }
+
+        .mainrightone_teacher{
+            width: 220px;
+            height: 55px;
+            /*border: 1px solid red;*/
+            margin: 12px 0;
+            overflow: hidden;
+        }
+
+        .mainrightone_teacher img{
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        .mainrightone_teacher p{
+            margin: 2px 0 5px 15px;
+            padding: 6px;
+            float: left;
+            font-size: 13px;
+            /*width: 40px;*/
+            height: 15px;
+            line-height: 15px;
+            background-color: #52a8b6;
+            border-radius: 13px;
+            color: white;
+        }
+
+        .mainrightone_teacher span{
+            margin: 0 0 0 15px;
+            padding: 0;
+            float: left;
+            font-size: 13px;
+            color: #aaaaaa;
+        }
+
+        .mainleftwo{
+            width: 980px;
+            display: block;
+            float: left;
+            /*height: 67px;*/
+            margin:10px 10px;
+            border: 1px solid red;
+
+        }
+
+        .footer{
+            width: 1000px;
+            height: 281px;
+            margin: 0 auto;
+            padding: 0;
+            /*border: 1px solid red;*/
+        }
+
+        .mainleftthree{
+            width: 1002px;
+            height: 19px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+        }/*<!--标题部分-->*/
+
+        .mainleftthree i{
+            font-style: normal;
+            border: 4px solid;
+            border-color: #4fa7b5;
+            float: left;
+            height: 17px;
+        }
+
+        .mainleftthree h3{
+            font-size: 16px;
+            margin: 0 0 0 10px;
+            padding: 0;
+            display: inline-block;
+            float: left;
+        }
+
+        .mainleftthree ul{
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .mainleftthree ul li{
+            float: left;
+            font-size: 12px;
+            margin: 2px 0 0 15px;
+            color: #888888;
+        }
+
+        .mainleftthree ul li a{
+            text-decoration: none;
+            color: #888888;
+            border: 2px solid;
+            border-color: transparent ;
+        }
+
+        .mainleftthree ul li a:hover{
+            border: 2px solid;
+            border-color: #4fa7b5 transparent transparent transparent;
+        }
+
+        .mainleftthree span{
+            display: inline-block;
+            margin-left: 50px;
+            color: #4fa7b5;
+            font-size: 14px;
+            float: right;
+        }
+
+        .mainleftthree span a{
+            text-decoration: none;
+            color: #4fa7b5;
+            font-family:微软雅黑;
+        }
+
+        .mainleftthree span a:hover{
+            text-shadow: 0 0 1px Gold;
+        }
+
+        .mainleftthree ul .mainleftone1_mar{
+            margin-left: 44px;
+        }
+
+        .mainleftthree_body{
+            margin: 0;
+            padding:0;
+            overflow:hidden;
+            /*border: 1px solid red;*/
+            width: 1008px;
+            height: 752px;
+        }
+
+        .mainleftthree_body img{
+            border: 0;
+        }
+
+        .mainleftthree_body ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainleftthree_body ul li{
+            list-style: none;
+            float: left;
+            height: 250px;
+            padding: 1px;
+        }
+
+        .mainleftthree_body_div_top ul{
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        .mainleftthree_body ul li:hover{
+            box-shadow:0 0 20px blue;
+        }
+
+        .mainleftthree_body_div{
+            width: 250px;
+            height: 250px;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .mainleftthree_body_div_top{
+            width: 248px;
+            height: 123px;
+            background-color: #f5f5f5;
+            float: left;
+        }
+
+        .mainleftthree_body_div_top h3{
+            margin: 20px 0 0 20px;
+            padding: 0;
+            color:#4fa7c2;
+            border-bottom: 1px solid #eeeeee;
+            width: 180px;
+        }
+
+        .mainleftthree_body_div_top p{
+            font-size: 13px;
+            margin: 35px 0 0 20px;
+
+        }
+
+        .mainleftthree_body_div_top span{
+            font-size: 13px;
+            margin: 5px 0 0 20px;
+            color: #aaaaaa;
+        }
+
+        .mainleftthree_body_div_bottom{
+            width: 248px;
+            height: 123px;
+            background-color: #f5f5f5;
+            float: left;
+        }
+
+        .mainleftthree_body_div_bottom h3{
+            margin: 20px 0 0 47px;
+            color:#4fa7c2;
+            border-bottom: 1px solid #eeeeee;
+            width: 180px;
+            text-align: right;
+        }
+
+        .mainleftthree_body_div_bottom p{
+            font-size: 13px;
+            margin: 35px 20px 0 0;
+            text-align: right;
+        }
+
+        .mainleftthree_body_div_bottom span{
+            font-size: 13px;
+            margin: 5px 0 0 59px;
+            color: #aaaaaa;
+            text-align: right;
+        }
+
+        .mainleffourleft {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*border: 1px solid red;*/
+            width: 760px;
+            height: 400px;
+            float: left;
+
+        }
+
+        .mainleffourleft i{
+            border: 4px solid #4fa7b5;
+            height: 10px;
+            float: left;
+        }
+
+        .mainleffourleft h3{
+            margin: 0 0 0 5px;
+            padding: 0;
+            font-size: 16px;
+            float: left;
+
+        }
+
+        .mainleffourleft ul{
+            margin: 0 0 0 40px;
+            padding: 0;
+            float: left;
+        }
+
+        .mainleffourleft ul li{
+            margin: 0 0 0 10px;
+            padding: 0;
+            height: 20px;
+            line-height: 20px;
+            float: left;
+            list-style: none;
+            font-size: 12px;
+        }
+
+        .mainleffourleft ul li a{
+            color:#888888;
+            text-decoration: none;
+        }
+
+        .mainleffourleft ul li a:hover{
+            border-bottom: 4px solid #4fa7b5;
+        }
+
+        .mainleffourleft span{
+            margin: 0 0 0 358px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0;
+            float: right;
+        }
+
+        .mainleffourleft span a{
+            text-decoration: none;
+            color: #4fa7b5;
+            font-family: 微软雅黑;
+            font-size: 14px;
+        }
+
+        .mainleffourleft_all{
+            width: 760px;
+            height: 362px;
+            margin: 0;
+            padding:0;
+            /*border: 1px solid red;*/
+            float: left;
+            overflow: hidden;
+        }
+
+        .mainleffourleft_all_box{
+            width: 370px;
+            height: 100px;
+            /*border: 1px solid red;*/
+            margin: 20px 0 0 5px;
+            padding: 0;
+            float: left;
+            display: block;
+            overflow:hidden;
+        }
+
+        .mainleffourleft_all_box img{
+            border: 0;
+            float: left;
+        }
+
+        .mainleffourleft_all_box h3{
+            margin:10px 0 0 10px;
+            padding:0;
+            float: left;
+            display: block;
+            font-size: 14px;
+            color: #4fa7b5;
+        }
+
+        .mainleffourleft_all_box span{
+            margin:15px 0 0 10px;
+            padding:0;
+            float: left;
+            width: 206px;
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+
+        .mainleffourleft_all_box i{
+            margin:10px 0 0 10px;
+            padding:0;
+            float: left;
+            font-size: 14px;
+            border: 0;
+            font-style: normal;
+            width: 45px;
+            height: 20px;
+            background-color: #4fa7b5;
+            text-align: center;
+            font-family: 微软雅黑;
+            color: white;
+            cursor: pointer;
+        }
+
+        .mainleffourleft_all_box b{
+            margin:10px 0 0 10px;
+            padding:0;
+            float: left;
+            color: #aaaaaa;
+            font-weight: normal;
+            font-size: 13px;
+        }
+        
+        .mainleffourright {
+            margin: 0 ;
+            padding: 0;
+            overflow:hidden;
+            width: 220px;
+            height: 863px;
+            /*border: 1px solid red;*/
+            float: right;
+        }
+
+        .mainleffourright h3,.mainleffourright span,.mainleffourright i{
+            margin:0 auto;
+            padding:0;
+            float: left;
+        }
+
+        .mainleffourright h3{
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .mainleffourright span{
+            margin-top: 2px;
+            margin-left: 126px;
+            font-family: 微软雅黑;
+            font-size: 14px;
+            color: #4fa7b5;
+            cursor:pointer;/*点击事件，小手*/
+        }
+
+        .mainleffourright i {
+            border: 4px solid #4fa7b5;
+            height: 10px;
+        }
+
+        .mainleffourright img{
+            margin-top: 15px;
+            width: 220px;
+        }
+
+        .mainleffourright ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .mainleffourright ul li{
+        /*                     */
+        }
+
+        .mainleffourright_imgtougao h4{
+            float: left;
+            margin: 5px 0 0;
+            padding: 0;
+            color: #4fa7b5;
+        }
+
+        .mainleffourright_imgtougao span{
+            float: left;
+            margin: 5px 0 0;
+            padding: 0;
+            cursor: default;
+            color: #aaaaaa;
+            font-size: 13px;
+        }
+        
+        .mainleffourright_imgtougao img{
+            margin: 5px 0 0 40px;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .mainleftfive{
+            width: 760px;
+            height: 462px;
+            margin: 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+            float: left;
+        }
+
+        .mainleftfiveone{
+            width: 758px;
+            height: 19px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+        }
+
+        .mainleftfiveone i{
+            font-style: normal;
+            border: 4px solid;
+            border-color: #4fa7b5;
+            float: left;
+            height: 17px;
+        }
+
+        .mainleftfiveone h3{
+            font-size: 16px;
+            margin: 0 0 0 6px;
+            padding: 0;
+            display: inline-block;
+            float: left;
+        }
+
+        .mainleftfiveone ul{
+            list-style: none;
+            margin: 0 0 0 40px;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .mainleftfiveone ul li{
+            float: left;
+            font-size: 12px;
+            margin: 2px 0 0 15px;
+            color: #888888;
+        }
+
+        .mainleftfiveone ul li a{
+            text-decoration: none;
+            color: #888888;
+            border: 2px solid;
+            border-color: transparent ;
+        }
+
+        .mainleftfiveone ul li a:hover{
+            border: 2px solid;
+            border-color: #4fa7b5 transparent transparent transparent;
+        }
+
+        .mainleftfiveone span{
+            display: inline-block;
+            margin-left: 50px;
+            color: #4fa7b5;
+            font-size: 14px;
+            float: right;
+        }
+
+        .mainleftfiveone span a{
+            text-decoration: none;
+            color: #4fa7b5;
+            font-family:微软雅黑;
+        }
+
+        .mainleftfiveone span a:hover{
+            text-shadow: 0 0 1px Gold;
+        }
+
+        .mainleftfiveleft{
+            overflow: hidden;
+            width: 281px;
+            /*border: 1px solid red;*/
+            float: left;
+        }
+
+        .mainleftfiveleft span{
+            display: block;
+            margin: 25px 0 25px 76px;
+        }
+
+        .mainleftfiveright{
+            width: 469px;
+            /*border: 1px solid red;*/
+            float: left;
+            margin-left: 6px;
+        }
+
+        .mainleftfiveright ul{
+            list-style: none;
+            margin: 0 0 0 2px;
+            padding: 0;
+        }
+
+        .mainleftfiveright ul li{
+            padding-top: 17px;
+            float: left;
+        }
+
+        .mainleftfiveright ul li span,.mainleftfiveright ul li p,.mainleftfiveright ul li i,.mainleftfiveright ul li b{
+            margin: 0 0 0 6px;
+            padding:0;
+            float: left;
+            font-size: 15px;
+            font-family: 微软雅黑;
+            color: #666666;
+        }
+
+        .mainleftfiveright ul li a:hover{
+            text-shadow: 0 0 3px gold;
+            color: red;
+        }
+
+        .mainleftfiveright ul li p{
+            width: 320px;
+        }
+
+        .mainleftfiveright ul li i{
+            margin: 3px 0 3px 20px;
+            font-style: normal;
+            color: #bbbbbb;
+            font-family: simsun;
+            font-size: 13px;
+        }
+        
+        .mainleftfiverightli {
+            margin-top: -18px;
+        }
+
+        .footer{
+            width: 100%;
+            margin: 0 auto;
+            /*border: 1px solid red;*/
+        }
+
+        .footerone{
+            width: 100%;
+            height: 200px;
+            /*border: 1px solid red;*/
+            background-color: #f5f5f5;
+            margin: 0 auto;
+        }
+
+
+        .footerone dl{
+            display: block;
+            float: left;
+            margin-left: 50px;
+        }
+
+        .footerone dt{
+            margin: 0 5px 20px 0;
+            padding:0;
+            color:#333;
+            font-family: 微软雅黑;
+        }
+
+        .footerone dd{
+            margin: 5px 0 0 10px;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .footerone dt span{
+            border: 4px solid #4fa7b5;
+            display: inline-block;
+            height: 10px;
+            margin: 0;
+
+        }
+
+        .footerone_1{
+            width: 1000px;
+            height: 200px;
+            margin: 0 auto;
+            /*border: 1px solid red;*/
+        }
+        
+        .footerone_1 img{
+            float: right;
+        }
+
+        .footertwo{
+            width: 100%;
+            height: 40px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+            background-color: #4a5052;
+        }
+
+        .fooerttwo_1{
+            width: 1000px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            margin: 0 auto;
+        }
+
+        .fooerttwo_1 ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+            /*margin: 10px auto;*/
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .fooerttwo_1 ul li{
+            float: right;
+            font-size: 13px;
+            color:#bbbbbb;
+        }
+        
+        .fooerttwo_1 ul li i{
+            font-size: 13px;
+            color: #586872;
+            font-style: normal;
+            margin: 0 5px;
+            
+        }
+
+        .footerthree{
+            width: 100%;
+            height: 40px;
+            /*border: 1px solid red;*/
+            overflow: hidden;
+            background-color: #3e4446;
+        }
+
+        .footerthree_1{
+            padding: 0;
+            width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            /*border: 1px solid red;*/
+            margin: 0 auto;
+        }
+
+        .footerthree_1 span{
+            float: right;
+            color: #bbbbbb;
+            font-size: 13px;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./NavBar.css" type="text/css"/>
+    <link rel="stylesheet" href="./all.css" type="text/css"/>
+
+</head>
+<body>
+
+    <div class="all"><!--这里是整个页面的div-->
+
+        <div class="NavBar"><!--这里是导航栏部分-->
+
+            <img src="./imgs/logo.png"/>
+
+            <div class="NavBar_a"><!--搜索框-->
+                    <ul>
+                        <li>
+                    <select class="NavBar_aSel" name="text">
+                        <option value="0">文章</option>
+                        <option value="1">影展</option>
+                        <option value="2">影赛</option>
+                        <option value="3">老师</option>
+                    </select>
+                    <input class="NavBar_atext" type="text" value="李老师"/>
+                    <input class="NavBar_abutt" type="button" value="搜索"/>
+                        </li>
+                    </ul>
+            </div><!--搜索框-->
+
+            <div class="NavBar_b">
+
+                <ul>
+                    <li>热门搜索:</li>
+                    <li><a href="##">北京国际摄影周</a></li>
+                    <li><a href="##">影赛</a></li>
+                    <li><a href="##">行摄之旅</a></li>
+                    <li><a href="##">风光</a></li>
+                </ul>
+
+            </div>
+
+            <div class="NavBar_c">
+                <ul>
+                    <li><a href="##">登录</a></li>
+                    <li><a class="NavBar_2biaoji"  href="##">注册</a></li>
+                </ul>
+            </div>
+
+        </div><!--这里是导航栏部分-->
+
+        <div class="NavBar_1"><!--导航条-->
+
+            <div class="NavBar_2">
+                <ul>
+                    <li><!--以下是下拉框，鼠标滑过的效果-->
+                        <a class="NavBar_2_0" href="###">首页
+                            <div class="NavBar_2_1">
+                            <ul>
+                                <li>123</li>
+                                <li>123</li>
+                                <li>123</li>
+                                <li>123</li>
+                            </ul>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li><a href="###">资讯</a></li>
+                    <li><a href="###">技巧</a></li>
+                    <li><a href="###">图片</a></li>
+                    <li><a href="###">器材</a></li>
+                    <li><a href="###">会员</a></li>
+                    <li><a href="###">活动</a></li>
+                    <li><a href="###">投稿</a></li>
+                    <li><a href="###">影展</a></li>
+                    <li><a href="###">图书</a></li>
+                    <li><a href="###">视频</a></li>
+                </ul>
+            </div>
+
+        </div><!--导航条-->
+
+        <div class="main"><!--这里是整体的主体部分-->
+
+            <div class="maintop"><!--banner部分-->
+
+                <img src="./imgs/1.jpg" />
+                <img src="./imgs/2.jpg" />
+                <img src="./imgs/3.jpg" />
+                <img src="./imgs/4.jpg" />
+                <img src="./imgs/5.jpg" />
+
+            </div><!--banner部分-->
+
+            <div class="mainleftone"><!--这里是摄影技巧整体部分-->
+
+                <div class="mainleftone1"><!--标题部分-->
+                    <i></i><!--竖杠部分-->
+                    <h3>摄影技巧</h3>
+                    <ul>
+                        <li class="mainleftone1_mar"><a href="##">入门 /</a></li>
+                        <li><a href="##">光圈 /</a></li>
+                        <li><a href="##">快门 /</a></li>
+                        <li><a href="##">景深 /</a></li>
+                        <li><a href="##">测光 /</a></li>
+                        <li><a href="##">构图 /</a></li>
+                        <li><a href="##">PS /</a></li>
+                        <li><a href="##">后期 /</a></li>
+                        <li><a href="##">滤镜</a></li>
+                    </ul>
+
+                    <span><a href="##">更多+</a></span>
+                
+                </div><!--标题部分-->
+                
+                <div class="mainleftone2"><!--这里是内容整体部分-->
+
+                    <div class="mainleftone2_1"><!--内容部分1-->
+
+                        <div class="mainleftone2_1_top"><!--内容部分1上-->
+                            <img src="./imgs/1406.jpg"/>
+                            <ul>
+                                <li><h4>这6种曝光错误，你犯过吗</h4></li>
+                                <li>
+                                    <i><img class="mainleftone2_1_topimg" src="./imgs/icon.jpg"/></i>
+                                    <a href="##">欠曝/</a>
+                                    <a href="##">过爆/</a>
+                                    <a href="##">曝光组合/</a>
+                                </li>
+                                <li><span>虽然拍摄使用RAW格式，可现在acr...</span></li>
+                            </ul>
+                            
+                            
+                        </div><!--内容部分1上-->
+
+                        <div class="mainleftone2_1_bottom"><!--内容部分1下-->
+                            <h4>相关文章</h4>
+                            <ul>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·特例解析直方图</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·新相机你都设置了吗!(二)</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·求解:摄影技巧停滞不前</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·毁掉好照片的错误操作二</a></li>
+                            </ul>
+
+                        </div><!--内容部分1下-->
+
+
+                    </div><!--内容部分1-->
+
+                    <div class="mainleftone2_2"><!--内容部分2-->
+
+                        <div class="mainleftone2_1_top"><!--内容部分1上-->
+                            <img src="./imgs/1406.jpg"/>
+                            <ul>
+                                <li><h4>这6种曝光错误，你犯过吗</h4></li>
+                                <li>
+                                    <i><img class="mainleftone2_1_topimg" src="./imgs/icon.jpg"/></i>
+                                    <a href="##">欠曝/</a>
+                                    <a href="##">过爆/</a>
+                                    <a href="##">曝光组合/</a>
+                                </li>
+                                <li><span>虽然拍摄使用RAW格式，可现在acr...</span></li>
+                            </ul>
+
+
+                        </div><!--内容部分2上-->
+
+                        <div class="mainleftone2_1_bottom"><!--内容部分1下-->
+                            <h4>相关文章</h4>
+                            <ul>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·特例解析直方图</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·新相机你都设置了吗!(二)</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·求解:摄影技巧停滞不前</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·毁掉好照片的错误操作二</a></li>
+                            </ul>
+
+                        </div><!--内容部分2下-->
+
+
+                    </div><!--内容部分2-->
+
+                    <div class="mainleftone2_3"><!--内容部分3-->
+
+                        <div class="mainleftone2_1_top"><!--内容部分1上-->
+                            <img src="./imgs/1406.jpg"/>
+                            <ul>
+                                <li><h4>这6种曝光错误，你犯过吗</h4></li>
+                                <li>
+                                    <i><img class="mainleftone2_1_topimg" src="./imgs/icon.jpg"/></i>
+                                    <a href="##">欠曝/</a>
+                                    <a href="##">过爆/</a>
+                                    <a href="##">曝光组合/</a>
+                                </li>
+                                <li><span>虽然拍摄使用RAW格式，可现在acr...</span></li>
+                            </ul>
+
+
+                        </div><!--内容部分4上-->
+
+                        <div class="mainleftone2_1_bottom"><!--内容部分1下-->
+                            <h4>相关文章</h4>
+                            <ul>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·特例解析直方图</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·新相机你都设置了吗!(二)</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·求解:摄影技巧停滞不前</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·毁掉好照片的错误操作二</a></li>
+                            </ul>
+
+                        </div><!--内容部分4下-->
+
+
+                    </div><!--内容部分3-->
+
+                    <div class="mainleftone2_4"><!--内容部分4-->
+
+                        <div class="mainleftone2_1_top"><!--内容部分1上-->
+                            <img src="./imgs/1406.jpg"/>
+                            <ul>
+                                <li><h4>这6种曝光错误，你犯过吗</h4></li>
+                                <li>
+                                    <i><img class="mainleftone2_1_topimg" src="./imgs/icon.jpg"/></i>
+                                    <a href="##">欠曝/</a>
+                                    <a href="##">过爆/</a>
+                                    <a href="##">曝光组合/</a>
+                                </li>
+                                <li><span>虽然拍摄使用RAW格式，可现在acr...</span></li>
+                            </ul>
+
+
+                        </div><!--内容部分2上-->
+
+                        <div class="mainleftone2_1_bottom"><!--内容部分1下-->
+                            <h4>相关文章</h4>
+                            <ul>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·特例解析直方图</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·新相机你都设置了吗!(二)</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·求解:摄影技巧停滞不前</a></li>
+                                <li class="mainleftone2_1_bottom_1"><a href="##">·毁掉好照片的错误操作二</a></li>
+                            </ul>
+
+                        </div><!--内容部分2下-->
+
+
+                    </div><!--内容部分4-->
+
+                </div><!--这里是内容整体部分-->
+
+            </div><!--这里是摄影技巧整体部分-->
+
+            <div class="mainrightone"><!--大美会员列表部分-->
+                    <h3>大美会员</h3>
+                    <span>更多+</span>
+                <ul>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mainrightone_teacher">
+                            <img src="./imgs/teacher.png" alt=""/>
+                            <p>姓:名:ABCDEF</p>
+                            <span>北京/上传了多少作品</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div><!--大美会员列表部分-->
+            
+            <div class="mainleftwo"><!--这里是广告-->
+                <img src="./imgs/guanggao.jpg" alt=""/>
+            </div><!--这里是广告-->
+
+            <div class="mainleftthree"><!--这里是摄影作品展示-->
+                <i></i><!--竖杠部分-->
+                <h3>摄影技巧</h3>
+                <ul>
+                    <li class="mainleftone1_mar"><a href="##">入门</a> /</li>
+                    <li><a href="##">光圈</a> /</li>
+                    <li><a href="##">快门</a> /</li>
+                    <li><a href="##">景深</a> /</li>
+                    <li><a href="##">测光</a> /</li>
+                    <li><a href="##">构图</a> /</li>
+                    <li><a href="##">PS</a> /</li>
+                    <li><a href="##">后期</a> /</li>
+                    <li><a href="##">滤镜</a></li>
+                </ul>
+
+                <span><a href="##">更多+</a></span>
+
+            </div><!--这里是摄影作品展示-->
+
+            <div class="mainleftthree_body"><!--巨大的矩阵图片及详情描述-->
+                <ul>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li>
+                        <div class="mainleftthree_body_div">
+                            <ul>
+                                <li>
+                                    <div class="mainleftthree_body_div_top">
+                                            <h3>办不到的承诺</h3>
+                                            <p>姓名:你是谁</p>
+                                            <span>这里是日期，2015年10月16号</span>
+                                    </div>
+                                    <div class="mainleftthree_body_div_bottom">
+                                            <h3>办不到的承诺</h3>
+                                            <p>姓名:你是谁</p>
+                                            <span>这里是日期，2015年10月16号</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li>
+                        <div class="mainleftthree_body_div">
+                            <ul>
+                                <li>
+                                    <div class="mainleftthree_body_div_top">
+
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+
+                                    </div>
+                                    <div class="mainleftthree_body_div_bottom">
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li>
+                        <div class="mainleftthree_body_div">
+                            <ul>
+                                <li>
+                                    <div class="mainleftthree_body_div_top">
+
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+
+                                    </div>
+                                    <div class="mainleftthree_body_div_bottom">
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                    <li>
+                        <div class="mainleftthree_body_div">
+                            <ul>
+                                <li>
+                                    <div class="mainleftthree_body_div_top">
+
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+
+                                    </div>
+                                    <div class="mainleftthree_body_div_bottom">
+                                        <h3>办不到的承诺</h3>
+                                        <p>姓名:你是谁</p>
+                                        <span>这里是日期，2015年10月16号</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><img src="./imgs/fengniao.jpg" alt=""/></li>
+                </ul>
+
+            </div><!--巨大的矩阵图片及详情描述-->
+
+            <div class="mainleftwo"><!--这里是广告-->
+                <img src="./imgs/guanggao.jpg" />
+            </div><!--这里是广告-->
+
+            <div class="mainleffourleft"><!--这里是摄影活动-->
+                <i></i>
+                <h3>摄影活动</h3>
+                <ul>
+                    <li><a href="####">行摄</a> /</li>
+                    <li><a href="####">沙龙</a> /</li>
+                    <li><a href="####">外拍</a> /</li>
+                    <li><a href="####">试用</a> /</li>
+                    <li><a href="####">讲座</a> /</li>
+                </ul>
+
+                <span><a href="##">更多+</a></span>
+
+                <div class="mainleffourleft_all"><!--摄影活动的大div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                <img src="./imgs/94.jpg" alt=""/>
+                                <h3>这里是标题这里是标题</h3>
+                                <span>这里是时间 2015年10月16日</span>
+                                <i>参加</i>
+                                <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                <img src="./imgs/94.jpg" alt=""/>
+                                <h3>这里是标题这里是标题</h3>
+                                <span>这里是时间 2015年10月16日</span>
+                                <i>参加</i>
+                                <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                <img src="./imgs/94.jpg" alt=""/>
+                                <h3>这里是标题这里是标题</h3>
+                                <span>这里是时间 2015年10月16日</span>
+                                <i>参加</i>
+                                <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                <img src="./imgs/94.jpg" alt=""/>
+                                <h3>这里是标题这里是标题</h3>
+                                <span>这里是时间 2015年10月16日</span>
+                                <i>参加</i>
+                                <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                <img src="./imgs/94.jpg" alt=""/>
+                                <h3>这里是标题这里是标题</h3>
+                                <span>这里是时间 2015年10月16日</span>
+                                <i>参加</i>
+                                <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                            <div class="mainleffourleft_all_box"><!--这里是小div-->
+                                    <img src="./imgs/94.jpg" alt=""/>
+                                    <h3>这里是标题这里是标题</h3>
+                                    <span>这里是时间 2015年10月16日</span>
+                                    <i>参加</i>
+                                    <b>已经有多少人参加</b>
+                            </div><!--这里是小div-->
+
+                </div><!--摄影活动的大div-->
+
+            </div><!--这里是摄影活动-->
+
+            <div class="mainleffourright"><!--摄影投稿-->
+                <i></i>
+                <h3>投稿</h3>
+                <span>更多+</span>
+
+                <ul>
+                    <img src="./imgs/zhanshihui.jpg" />
+                    <li class="mainleffourright_imgtougao">
+                        <h4>显微摄影专题展</h4>
+                        <span>截稿时间什么什么时间</span>
+                        <img src="./imgs/tougao.png"/>
+                    </li>
+
+                    <img src="./imgs/zhanshihui.jpg" />
+                    <li class="mainleffourright_imgtougao">
+                        <h4>显微摄影专题展</h4>
+                        <span>截稿时间什么什么时间</span>
+                        <img src="./imgs/tougao.png"/>
+                    </li>
+
+                    <img src="./imgs/zhanshihui.jpg" />
+                    <li class="mainleffourright_imgtougao">
+                        <h4>显微摄影专题展</h4>
+                        <span>截稿时间什么什么时间</span>
+                        <img src="./imgs/tougao.png"/>
+                    </li>
+
+                    <img src="./imgs/zhanshihui.jpg" />
+                    <li class="mainleffourright_imgtougao">
+                        <h4>显微摄影专题展</h4>
+                        <span>截稿时间什么什么时间</span>
+                        <img src="./imgs/tougao.png"/>
+                    </li>
+
+                    <img src="./imgs/zhanshihui.jpg" />
+                    <li class="mainleffourright_imgtougao">
+                        <h4>显微摄影专题展</h4>
+                        <span>截稿时间什么什么时间</span>
+                        <img src="./imgs/tougao.png"/>
+                    </li>
+
+                </ul>
+
+            </div><!--摄影投稿-->
+
+            <div class="mainleftfive"><!--这里是摄影资讯-->
+                <div class="mainleftfiveone"><!--标题部分-->
+                    <i></i><!--竖杠部分-->
+                    <h3>摄影技巧</h3>
+                    <ul>
+                        <li class="mainleftone1_mar"><a href="##">公告</a> /</li>
+                        <li><a href="##">访谈</a> /</li>
+                        <li><a href="##">动态</a> /</li>
+                        <li><a href="##">器材</a> /</li>
+                    </ul>
+
+                    <span><a href="##">更多+</a></span>
+                </div><!--标题部分-->
+
+                <div class="mainleftfiveleft"><!--左边部分-->
+                    <img src="./imgs/zhufengyu.jpg" />
+                    <span>大美摄影采访摄爷</span>
+                    <img src="./imgs/zhufengyu.jpg" />
+                    <span>大美摄影采访摄爷</span>
+                </div><!--左边部分-->
+
+                <div class="mainleftfiveright"><!--这里是右边部分-->
+                    <ul>
+                        <li class="mainleftfiverightli">
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+                        <li>
+                            <a href="##">
+                                <span>访谈</span>
+                                <b>|</b>
+                                <p>【摄影科学讲座第三期我们的摄影摄影摄影】</p>
+                            </a>
+                            <i>这里是日期</i>
+                        </li>
+
+                    </ul>
+
+                </div><!--这里是右边部分-->
+
+            </div><!--这里是摄影资讯-->
+
+        </div><!--这里是整体的主体部分-->
+
+        <div class="footer"><!--这里是网站底部-->
+            <div class="footerone"><!--底部第一个框-->
+                <div class="footerone_1">
+                <dl>
+                    <dt><span></span>摄影协会</dt>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                </dl>
+
+
+                <dl>
+                    <dt><span></span>摄影协会</dt>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                </dl>
+
+
+                <dl>
+                    <dt><span></span>摄影协会</dt>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                </dl>
+
+
+                <dl>
+                    <dt><span></span>摄影协会</dt>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                    <dd>中国摄影家协会</dd>
+                </dl>
+
+                    <img src="./imgs/weixin.jpg" alt=""/>
+                    
+
+                </div>
+            </div>
+
+            <div class="footertwo"><!--底部第二个框-->
+                <div class="fooerttwo_1">
+                    <ul>
+                        <li>公告中心</li>
+                        <li>公告中心<i>|</i></li>
+                        <li>公告中心<i>|</i></li>
+                        <li>公告中心<i>|</i></li>
+                        <li>公告中心<i>|</i></li>
+                        <li>公告中心<i>|</i></li>
+                    </ul>
+                </div>
+            </div><!--底部第二个框-->
+
+            <div class="footerthree"><!--底部第三个框-->
+                <div class="footerthree_1">
+                    <span>京ICP备12051254 大美摄影 版权所有 http://www.photodamei.com</span>
+                </div>
+            </div><!--底部第三个框-->
+
+        </div><!--这里是网站底部-->
+
+    </div><!--这里是整个页面的div-->
+
+</body>
+</html>

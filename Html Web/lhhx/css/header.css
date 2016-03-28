@@ -1,0 +1,112 @@
+.header{
+    background: url("../images/dingbu.png") repeat-x;
+}
+.header_auto{
+    width: 999px;
+    height: 50px;
+    margin: 0 auto;
+}
+.header_nav{
+    height: 5px;
+    background: url("../images/go.png") ;
+}
+.banner{
+    width: 999px;
+    height: 551px;
+    margin: 0 auto;
+    background: #000;
+    background:url("../images/header_main.jpg") no-repeat;
+    position: relative;
+}
+.banner_top{
+    height: 110px;
+}
+.banner_top_logo{
+    width: 190px;
+    height: 100px;
+    float: left;
+    margin: 5px 0 0 4px;
+}
+.banner_top_logo a{
+    display: block;
+}
+.banner_top_logo img{
+    width: 190px;
+    height: 100px;
+    display: block;
+}
+.banner_top_ul{}
+.banner_top_ul li{
+    height: 40px;
+    float: left;
+    margin: 35px 0 0 28px;
+    text-align: center;
+    font-family: 'Î¢ÈíÑÅºÚ';
+}
+.banner_top_ul li a{
+    text-decoration: none;
+    color: #c5d0fd;
+}
+.banner_top_ul li p{
+    font-size: 16px;
+}
+.banner_top_ul li span{
+    color: #60658f;
+}
+.logo{
+    width: 113px;
+    height: 36px;
+    margin: 6px 0 0 0;
+    float: left;
+    background: url("../images/logo.png") no-repeat;
+}
+.card{
+    width: 35px;
+    height: 122px;
+    background: url("../images/meiti.png") no-repeat;
+    position: absolute;
+    top: 50%;
+}
+.list{
+    margin: 0 10px 0 0;
+}
+.list span{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 17px 0 18px;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    margin: 0 0 0 -1px;
+    cursor: pointer;
+}
+.list span i{
+    border: 5px solid;
+    border-color: #676868 transparent transparent transparent;
+    float: right;
+    margin: 23px 0 0 5px;
+}
+.list_ul{
+    float: right;
+    height: 36px;
+    /*background: #000;*/
+    margin: 7px 0 0 0;
+}
+.list_ul li{
+    float: left;
+
+}
+.list_ul li a{
+    display: block;
+    line-height: 36px;
+    padding: 0 10px 0 32px;
+    color: #333333;
+}
+.list_ul li b{
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: #dfdfdf;
+    margin: 5px 6px 0 0;
+    background: url("../images/cyou_sprite.png") 287px 0px;
+}

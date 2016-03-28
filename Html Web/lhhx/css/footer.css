@@ -1,0 +1,25 @@
+.footer{
+    height: 110px;
+    background: #dfdfdf;
+}
+.footer_nav{
+    height: 10px;
+    background: url("../images/footer_bg.png") repeat-x;
+}
+.footer_box{
+    height: 100px;
+    background: #181818;
+}
+.footer_box_auto{
+    width: 999px;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../images/changyou.png") no-repeat;
+}
+
+.footer_box_auto p{
+    padding: 0 0 0 242px;
+    margin: 25px 0 0 0;
+    float: left;
+    color: #737488;
+}

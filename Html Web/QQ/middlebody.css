@@ -1,0 +1,9 @@
+/*这个是body中间的部分*/
+.middlebody {
+    width: 980px;
+    height: 2181px;
+    margin: 0 auto;
+    padding: 0;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}

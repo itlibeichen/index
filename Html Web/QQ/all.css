@@ -1,0 +1,10 @@
+/*这个是最大的div*/
+.all {
+    /*min-width: 980px;*/
+    white:100%;
+    height: 2684px;
+    margin: 0 auto;
+    padding: 0;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}

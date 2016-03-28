@@ -1,0 +1,40 @@
+.footer-all{
+    min-width: 1080px;
+    height: 253px;
+    border-top: 1px solid #dadada;
+    overflow: hidden;
+}
+.footer{
+    height: 253px;
+    width: 1080px;
+    margin: 0 auto;
+    color: #999685;
+    overflow: hidden;
+}
+.footer-ul{
+    width: 304px;
+    float: left;
+    margin: 58px 0 0 0;
+}
+.footer-ul li{
+    width: 150px;
+    height: 85px;
+    line-height: 127px;
+    text-align: center;
+    float: left;
+    margin: 1px;
+    padding-top:0;
+}
+.fot{
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 115px;
+    color: #000;
+}
+.fot a{
+    color: #999685;
+}
+.footer-ul li.line-hei-4px{
+    line-height: 44px;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/clearFix.css"/>
+    <link rel="stylesheet" href="./css/resume.css"/>
+    <script></script>
+</head>
+<body>
+<!--index&content start-->
+<div class="index">
+    <!--首页导航 start-->
+    <div class="navigation">
+        <!--logo&list-->
+        <div class="logo-list clearFix">
+            <div class="logo-div-a"></div>
+            <h1 class="logo">
+                <a href="index.html"></a>
+            </h1>
+            <ul class="list clearFix">
+                <li>
+                    <a href="index.html">
+                        <img src="images/index.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/re.png" alt=""/>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/javascript.png" alt=""/>
+                    </a>
+                </li>
+                <li class="ma-40">
+                    <a href="javascript:;">
+                        <img src="images/h5.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--logo&list-->
+    </div>
+    <!--首页导航 end-->
+    <!--简历 start-->
+    <div class="resume" id="resume">
+        <div class="showThis" id="showThis">
+            <div class="mask" id="mask"></div>
+            <img src="./images/libeichen1.jpg" alt="" id="images"/>
+        </div>
+        <div class="div2" id="div2">
+            <img src="./images/libeichen1.jpg" alt="" id="images2" />
+        </div>
+        <div class="btn" id="obtn">
+            <a href="javascript:;">
+                点击进入下一张;鼠标移入上面图片右侧即可显示放大效果;
+            </a>
+        </div>
+    </div>
+    <!--简历 end-->
+    <!--时钟 start-->
+    <div class="tike" id="time">
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img src="images/tike/images/sign.png" alt="sign" />
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img src="images/tike/images/sign.png" alt="sign" />
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img class="num" src="images/tike/images/0.png" alt="0" />
+        <img class="pos2" src="images/tike/images/week.png" alt="week" />
+        <img class="num2" src="images/tike/images/four.png" alt="one" id="num2"/>
+    </div>
+    <!--时钟 end-->
+</div>
+<!--index&content end-->
+</body>
+
+<script>
+    /*公用的js start*/
+    /*运动框架*/
+    function getStyle(obj, name) {
+        return (obj.currentStyle || getComputedStyle(obj, false))[name];
+    }
+    function startMove(obj, json, options) {
+        options = options || {};
+        options.duration = options.duration || 700;
+        options.easing = options.easing || 'ease-out';
+
+        var start = {};
+        var dis = {};
+        for (var name in json) {
+            start[name] = parseFloat(getStyle(obj, name));
+            if (isNaN(start[name])) {
+                switch (name) {
+                    case 'left':
+                        start[name] = obj.offsetLeft;
+                        break;
+                    case 'top':
+                        start[name] = obj.offsetTop;
+                        break;
+                    case 'width':
+                        start[name] = obj.offsetWidth;
+                        break;
+                    case 'height':
+                        start[name] = obj.offsetHeight;
+                        break;
+                    case 'opacity':
+                        start[name] = 1;
+                        break;
+                    case 'borderWidth':
+                        start[name] = 0;
+                        break;
+                }
+            }
+            dis[name] = json[name] - start[name];
+        }
+        var count = Math.floor(options.duration / 30);
+        var n = 0;
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            n++;
+            for (var name in json) {
+                switch (options.easing) {
+                    case 'linear':
+                        var cur = start[name] + dis[name] * n / count;
+                        break;
+                    case 'ease-in':
+                        var a = n / count;
+                        var cur = start[name] + dis[name] * Math.pow(a, 3);
+                        break;
+                    case 'ease-out':
+                        var a = 1 - n / count;
+                        var cur = start[name] + dis[name] * (1 - Math.pow(a, 3));
+                        break;
+                    default:
+                        var a = 1 - n / count;
+                        var cur = start[name] + dis[name] * (1 - Math.pow(a, 3));
+                        break;
+                }
+                if (name == 'opacity') {
+                    obj.style[name] = cur;
+                    obj.style.filter = 'alpha(opacity:' + cur * 100 + ')';
+                } else {
+                    obj.style[name] = cur + 'px';
+                }
+            }
+            if (n == count) {
+                clearInterval(obj.timer);
+                options.complete && options.complete();
+            }
+        }, 30);
+    }
+    function addReady(fn) {
+        if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn, false);
+        } else {
+            document.attachEvent('onreadystatechange', function () {
+                if (document.readyState == 'complete') {
+                    fn && fn();
+                }
+            });
+        }
+    }
+    function addEvent(obj, sEv, fn) {
+        if (obj.addEventListener) {
+            obj.addEventListener(sEv, fn, false);
+        } else {
+            obj.attachEvent('on' + sEv, fn);
+        }
+    }
+    function getPos(obj) {
+        var l = 0;
+        var t = 0;
+        while (obj) {
+            l += obj.offsetLeft;
+            t += obj.offsetTop;
+            obj = obj.offsetParent;
+        }
+        return {
+            left: l,
+            top: t
+        }
+    }
+    function rnd(m, n) {
+        return parseInt(m + Math.random() * (n - m));
+    }
+    /*运动框架*/
+    /*公用的js end*/
+    /*时钟*/
+    (function () {
+        function time(){
+            var oTime = document.getElementById('time');
+            var aImg2 = oTime.getElementsByClassName('num');
+            var oDate = new Date();
+            var H = oDate.getHours();//小时
+            var m = oDate.getMinutes();//分钟
+            var s = oDate.getSeconds();//秒钟
+            function toDou (n){
+                return n<10?'0'+n : ''+n;
+            }
+            var str = toDou(H) + toDou(m) + toDou(s); //这里不明白
+            for (var i = 0; i < aImg2.length; i++) {
+                aImg2[i].src = 'images/tike/images/' + str.charAt(i) + '.png'; //str的charAt(i); 这个是处理字符串的兼容性;
+            }
+        }
+        time();
+        setInterval(time,1000);
+
+        function day(){
+            var oBtn = document.getElementById('num2');
+            var oDate = new Date();
+            var week = oDate.getDay();//日期*/
+            var xingQi = ['seven','one','two','three','four','five','six'];
+            oBtn.src = 'images/tike/images/'+xingQi[week]+'.png';
+        }
+        day();
+        setInterval(day,1000)
+    })();
+    ;
+    /*选项卡*/
+    (function (){
+        var aImg = document.getElementById('images');
+        var oBtn = document.getElementById('obtn');
+        var aImg2 = document.getElementById('images2');
+        var n = 1;
+        oBtn.onclick = function (){
+            n++ ;
+            if(n>3){
+                n = 1;
+            }
+            aImg.src = './images/libeichen'+n+'.jpg';
+            aImg2.src = './images/libeichen'+n+'.jpg';
+        };
+    })();
+    ;
+    /*放大镜*/
+    (function (){
+        var oShow = document.getElementById('showThis');
+        var oDiv = document.getElementById('div2');
+        var oMask = document.getElementById('mask');
+        var oR = document.getElementById('resume');
+        var oImg = oDiv.children[0];
+        oShow.addEventListener('mouseenter',function (){
+            startMove(oDiv,{opacity:1});
+            oMask.style.display = 'block';
+        },false);
+        oShow.addEventListener('mouseleave',function (){
+            startMove(oDiv,{opacity:0});
+            oMask.style.display = 'none';
+        },false);
+        /**/
+        oShow.onmousemove = function(ev){
+            var oEvent = ev||event;
+            var sT = document.documentElement.scrollTop||document.body.scrollTop;
+            var sL = document.documentElement.scrollLeft||document.body.scrollLeft;
+            var l = oEvent.clientX-oMask.offsetWidth/2-oShow.offsetLeft+sL-oR.offsetLeft;
+            var t = oEvent.clientY-oMask.offsetHeight/2-oShow.offsetTop+sT-oR.offsetTop;
+            if(l<0){
+                l=0;
+            }else if(l>oShow.offsetWidth-oMask.offsetWidth){
+                l=oShow.offsetWidth-oMask.offsetWidth;
+            }
+            if(t<0){
+                t=0;
+            }else if(t>oShow.offsetHeight-oMask.offsetHeight){
+                t=oShow.offsetHeight-oMask.offsetHeight;
+            }
+            oMask.style.left = l+'px';
+            oMask.style.top = t+'px';
+            oImg.style.left = -l*(oImg.offsetWidth-oDiv.offsetWidth)/(oShow.offsetWidth-oMask.offsetWidth)+'px';
+            oImg.style.top = -t*(oImg.offsetHeight-oDiv.offsetHeight)/(oShow.offsetHeight-oMask.offsetHeight)+'px';
+
+        };
+    })();
+</script>
+</html>

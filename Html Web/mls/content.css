@@ -1,0 +1,273 @@
+.content{
+    /*height: 1000px;*/
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.content_1{
+    width: 1200px;
+    height: 830px;
+}
+.content_1 h3{
+    height: 36px;
+    background: url("images/wel_ico2.png") no-repeat 0 6px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.content_1 ul{
+    width: 1218px;
+}
+
+.content_1 ul li{
+    float: left;
+    height: 376px;
+    width: 180px;
+    margin: 15px 23px 0 0;
+}
+
+.content_1 ul li img{
+    display: block;
+}
+
+.content ul li .content_span1{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    margin-bottom: 8px;
+
+}
+
+.content_1 p{
+    height: 36px;
+    line-height: 36px;
+    color: #ff6699;
+    border-bottom: 1px dotted #cccccc;
+    font-size: 13px;
+}
+.content_1 p i{
+    font-style: normal;
+    color: #cccccc;
+    margin-left: 9px;
+    text-decoration: line-through;
+}
+
+.content_2{
+    width: 1200px;
+    /*height: 830px;*/
+}
+.content_2 h3{
+    height: 36px;
+    background: url("images/wel_ico2.png") no-repeat 0 -231px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.content_2 h3 a{
+    display: block;
+    float: right;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.content_2 ul{
+    width: 1218px;
+}
+
+.content_2 ul li{
+    float: left;
+    height: 376px;
+    width: 180px;
+    margin: 15px 23px 0 0;
+}
+
+.content_2 ul li img{
+    display: block;
+}
+
+.content ul li .content_span1{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.content_2 p{
+    height: 36px;
+    line-height: 36px;
+    color: #ff6699;
+    border-bottom: 1px dotted #cccccc;
+    font-size: 13px;
+}
+.content_2 p i{
+    font-style: normal;
+    color: #cccccc;
+    margin-left: 9px;
+    text-decoration: line-through;
+}
+
+.content3{
+    width: 1200px;
+    height: 100px;
+    background: url("images/meilijia.png") no-repeat;
+    margin: 31px 0 0 0;
+}
+
+/**/
+.content4{
+    width: 1200px;
+}
+
+.content4 h3{
+    height: 36px;
+    line-height: 36px;
+    background: url("images/wel_ico2.png") no-repeat 0 -37px;
+    margin: 20px 0 15px 0;
+}
+
+.content4 h3 span{
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    padding: 0 9px;
+    margin: 9px 0 0 89px;
+    border-left: 1px dotted #cccccc;
+    color: #666;
+}
+
+.content4 h3 a{
+    display: block;
+    float: right;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666;
+}
+
+.content4_l{
+    width: 935px;
+    height: 610px;
+    float: left;
+    border: 1px solid #cccccc;
+}
+
+.content4_l ul li{
+    position: relative;
+    float: left;
+}
+
+.content4_l ul li img{
+    display: block;
+    margin: 5px 5px 0 0;
+}
+
+.content4_l ul li:hover span{
+    text-shadow: 0 0 5px black;
+}
+
+.content4_l ul li span{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("images/bar_bg.png") repeat-x ;
+    color: white;
+}
+.content4_l_div {
+    width: 935px;
+    height: 50px;
+    margin-top: 18px;
+    float: left;
+}
+
+.content4_l_div_shuo{
+    width: 288px;
+    height: 44px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.content4_l_div_shuo h5{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    font-size: 15px;
+    padding: 5px 0 0 5px;
+    color: #ff6699;
+    border-left: 1px dotted #cccccc;
+}
+
+.content4_l_div_shuo ul li{
+    float: right;
+    color: #cccccc;
+    font-size: 12px;
+    width: 234px;
+
+}
+
+.content4_r{
+    width: 261px;
+    height: 610px;
+    border: 1px solid #cccccc;
+    border-left-color: transparent ;
+    float: left;
+    overflow: hidden;
+    margin: 0 0 0 -1px;
+}
+
+.content4_r h5{
+    height: 39px;
+    line-height: 39px;
+    width: 236px;
+    font-weight: bold;
+    float: left;
+    padding: 0 0 0 19px;
+}
+
+.content4_r h5 span{
+    float: right;
+    font-size: 12px;
+}
+.content4_r ul{
+    float: left;
+}
+
+.content4_r ul li{
+    float: left;
+    width: 239px;
+    border: 1px dotted;
+    height: 62px;
+    margin-left: 20px;
+    border-color: transparent transparent #cccccc;
+}
+
+.content4_r ul li img{
+    float: left;
+    margin: 14px 11px 0 0;
+    display: block;
+}
+
+.content4_r ul li p{
+    float: left;
+    margin: 16px 0 0 0;
+    font-size: 12px;
+    color: #666666;
+}
+
+.content4_r ul li span{
+    float: left;
+    font-size: 12px;
+    color: #999;
+}
+
+
+

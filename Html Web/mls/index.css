@@ -1,0 +1,257 @@
+.top{
+    width: 100%;
+    height: 146px;
+}
+
+.top_top{
+    height: 39px;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.top_top .top_all{
+    background: #f5f5f5;
+    width: 1200px;              /*这里是疑问*/
+    min-width: 1200px;
+    height: 39px;
+    margin: 0 auto;
+}
+
+.top_top ul{
+    float: right;
+}
+
+.top_top ul li{
+    float: left;
+    margin-top: 11px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border: 1px dotted;
+    border-color: transparent #666666 transparent transparent;
+    padding: 0 15px;
+}
+
+.top_top ul li.weixin{
+    background: url("images/i_wx_single.png") no-repeat left center;
+}
+
+.top_top ul li span{
+    display: block;
+    height: 16px;
+    width: 15px;
+    float: left;
+    margin-top: 1px;
+}
+
+.top_top ul li span.text{
+    background: url("images/icon.png") no-repeat -223px -45px;
+    width: 13px;
+    height: 15px;
+    margin-top: 2px;
+    display: block;
+}
+
+.top_top ul li span.phone{
+    background: url("images/icon.png") no-repeat -171px -45px;
+    width: 11px;
+    height: 16px;
+    margin-top: 2px;
+    display: block;
+}
+
+.top_top ul li span.qq{
+    background: url("images/icon.png") no-repeat -189px -21px;
+}
+
+.top_top ul li span.shop_car{
+    background: url("images/icon.png") no-repeat 0 -164px;
+    height: 15px;
+    width: 18px;
+}
+
+.top_top ul li.pot{
+    position: relative;
+}
+
+.top_top ul li div.pot_1{
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 2px;
+    left: 97px;
+    text-align: center;
+    padding: 0 6px;
+    border-radius: 10px;
+    background: #999999;
+    color: white;
+    margin-left: 5px;
+}
+
+.top_top ul li a.pot_a{
+    margin-right: 30px;
+}
+
+.top_top ul li.none{
+    border-right-color: transparent;
+}
+
+.top_top ul li a{
+    float: right;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    display: block;
+    color: #666;
+    margin: -1px 0 0 3px;
+}
+
+.top_logo img{
+    margin-top: 15px;
+    margin-right: 254px;
+}
+
+.top_logo img.top_img{
+    margin-top: 17px;
+    margin-right: 0;
+}
+
+
+.top_logo .top_logo_main{
+    height: 66px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top_nav{
+    height: 40px;
+    margin: 0 auto;
+    background: #ff6599;
+}
+
+.top_nav_main{
+    height: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #ff6599;
+    position: relative;
+    z-index: 2;
+}
+
+.top_nav_main ul li a.active{
+    background: #ed3577;
+}
+
+.top_nav_main ul li:hover{
+    background: #ed3577;
+}
+
+.top_nav_main ul li a.sanjiao{
+    position: relative;
+}
+
+.top_nav_main ul li a.sanjiao span{
+    border: 3px solid;
+    border-color: white transparent transparent transparent;
+    display: block;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 2px;
+}
+
+.top_nav_main ul li a.sanjiao:hover span{
+    border: 3px solid;
+    border-color:transparent transparent white transparent;
+    position: absolute;
+    top: 18px;
+    right: 2px;
+}
+
+.top_nav_main ul li{
+    float: left;
+}
+
+.top_nav_main ul li a{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    padding: 0 14px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top_nav_main_hover{
+    overflow: hidden;
+    width: 85px;
+    border: 1px solid red;
+}
+
+.top_nav_main_hover ul li a{
+    background: #f7f6f6;
+    color: #000;
+    width: 85px;
+    padding: 0;
+}
+
+.top_nav_main .top_nav_main_hover{
+    width: 85px;
+    position: absolute;
+    top: 40px;
+    display: none;
+    color: #000;
+    overflow: hidden;
+}
+
+.top_nav_main_hover ul{
+    position: relative;
+}
+
+.top_nav_main ul li:hover .top_nav_main_hover{
+    display: block;
+    width: 85px;
+}
+
+.top_nav_main_hover ul li:hover a{
+    display: block;
+    width: 90px;
+    padding: 0;
+    background-color: #ff6599;
+    color: white;
+}
+
+.top_nav_main .top_nav_main_hover li:hover{
+    background-color: #ff6599;
+}
+
+.top_nav-main_hover_ok a.big{
+    display: block;
+    width: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.top_nav_main ul li.kuan:hover .top_nav_main_hover{
+    display: block;
+    width: 100px;
+}
+
+.top_nav_main_hover ul li.kuan:hover a{
+    display: block;
+    width: 100px;
+    padding: 0;
+    background-color: #ff6599;
+    color: white;
+}
+
+li.kuan .top_nav-main_hover_ok a.big{
+    display: block;
+    width: 100px;
+}
+

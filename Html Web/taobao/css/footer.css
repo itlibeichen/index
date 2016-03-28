@@ -1,0 +1,38 @@
+.footer_auto {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.footer_auto_one {
+    width: 1190px;
+    height: 69px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.footer_auto_one i{
+    float: left;
+    color: #e6dde6;
+    margin: 15px 10px 0;
+    font-style: normal;
+
+}
+.footer_auto_one a {
+    color: #6c6c6c;
+    margin: 15px 0 0;
+    float: left;
+}
+.footer_auto_two p{
+    margin: 12px 0 0;
+}
+.footer_auto_two p a{
+    color: #6c6c6c;
+}
+.footer_auto_three p{
+    margin: 12px 0 0;
+}
+.footer_auto_three p a{
+    color: #6c6c6c;
+}
+.footer_auto_four{
+    height: 42px;
+}

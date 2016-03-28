@@ -1,0 +1,132 @@
+.content {
+    /*height: 2710px;*/
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-bg-3 {
+    width: 492px;
+    height: 810px;
+    background: url("../../../images/Portfolio%20images/zouzhe.png") no-repeat;
+    position: absolute;
+    top: -50px;
+    left: 513px;
+}
+
+/**/
+
+.content-text {
+    width: 1080px;
+}
+
+.content-text h2 {
+    font-size: 52px;
+    font-weight: bold;
+    padding: 285px 0 0 0;
+}
+
+.context-review {
+    width: 500px;
+    padding: 285px 0 0;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.content-list {
+    width: 395px;
+    height: 165px;
+    font-size: 16px;
+    margin: 48px 0 0 0;
+}
+
+.content-list li {
+    list-style: disc;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.content-list li a {
+    color: #0dd0dd;
+}
+
+.content-list-ul-l {
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+
+.content-Info {
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    overflow: hidden;
+}
+
+.content-Info-per {
+    /*overflow: hidden;*/
+    width: 1080px;
+    margin: 80px auto 25px;
+}
+
+.cont-flims {
+    width: 345px;
+    float: left;
+}
+
+.cont-flims h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+.cont-flims .p1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 38px 0 0 0;
+}
+
+.cont-flims .p2 {
+    text-indent: 1em;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.content-Infom {
+    float: right;
+    width: 735px;
+}
+
+.content-Infom li {
+    float: left;
+    width: 345px;
+    margin: 0 0 0 20px;
+}
+
+.content-Infom li img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+/*黑白开始*/
+.Imges-gar img{
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+}
+/*黑白结束*/
+
+/*box2*/
+.box2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border: 5px solid red;
+    border-radius: 50%;
+    display: none;
+}

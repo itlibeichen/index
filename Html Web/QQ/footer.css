@@ -1,0 +1,205 @@
+.footer {
+    min-width: 980px;
+    height: 348px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    background-color: #f7f7f7;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer1 {
+    margin: 35px 0 0 240px;
+    width: 265px;
+    height: 113px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+.footer1 h3 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: #75758a;
+}
+
+.footer1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.footer1 li {
+    display: block;
+    margin-top: 7px;
+    margin-right: 8px;
+    float: left;
+    font-size: 13px;
+    color: #75758a;
+}
+
+.footer2 {
+    margin: 35px 0 0 60px;
+    width: 136px;
+    height: 113px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+.footer2 h3 {
+    margin: 0;
+    padding: 0;
+    color: #75758a;
+}
+
+.footer2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer2 li {
+    display: block;
+    margin-top: 7px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #75758a;
+}
+
+.footer3 {
+    margin: 35px 0 0 60px;
+    width: 181px;
+    height: 113px;
+    /*border: 1px solid red;*/
+    float: left;
+
+}
+
+.footer3 h3 {
+    margin: 0;
+    padding: 0;
+    color: #75758a;
+}
+
+.footer3 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer3 li {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    margin-top: 1px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #75758a;
+    background: url("./img/tubiao.png") no-repeat;
+}
+
+.footer3 li a {
+    text-decoration: none;
+    color: #75758a;
+}
+
+.footer3 li.one {
+    background-position: right 0px;
+}
+
+.footer3 li.two {
+    background-position: right -32px;
+
+}
+
+.footer4 {
+    margin: 35px 0 0 60px;
+    width: 102px;
+    height: 185px;
+    /*border: 1px solid red;*/
+    float: left;
+
+}
+
+.footer4 h3 {
+    margin: 0 0 0 15px;
+    padding: 0;
+    color: #75758a;
+}
+
+.footer4 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer4 li {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    margin: 1px 8px 0 15px;
+    font-size: 13px;
+    color: #75758a;
+
+}
+
+.footer5 {
+    width: 516px;
+    height: 25px;
+    margin: 35px 0 0 418px;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: left;
+    overflow: hidden;
+}
+
+.footer5 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer5 li {
+    height: 8px;
+    line-height: 8px;
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 3px;
+    border: 1px solid;
+    border-color: transparent #666666 transparent transparent;
+    color: #666666;
+
+}
+
+.footer5 a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer6 {
+    width: 319px;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    float: left;
+    position: absolute;
+    top: 284px;
+    left: 516px;
+}
+
+.footer6 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer6 li {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}

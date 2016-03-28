@@ -1,0 +1,293 @@
+.header{
+    height: 76px;
+    background: #f5f5f5;
+}
+.header_top{
+    height: 36px;
+    width: 1190px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+
+.header_bottom{
+    height: 40px;
+    background: #1baebd;
+    overflow: hidden;
+    min-width: 1190px;
+    margin: 0 auto;
+}
+.header_bottom_auto{
+    width: 1190px;
+    height: 40px;
+    margin:0 auto;
+
+}
+.logo{
+    height: 130px;
+    background: #ffffff;
+}
+.logo_auto{
+    width: 1190px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.header_top_left{
+    width: 220px;
+    height: 36px;
+    float: left;
+}
+
+.header_top_left span{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 0 0 5px;
+    float: left;
+    cursor: pointer;
+}
+.header_top_left span a{
+    color: #6c6c6c;
+}
+
+
+.header_top_left span .im{
+    color: #f22e00;
+}
+
+.header_top_left .pad20{
+    padding: 0 0 0 20px;
+}
+
+.header_top_right{
+    width: 564px;
+    height: 36px;
+    float: right;
+}
+
+.header_top_right li{
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.header_top_right_ul{
+    width: 559px;
+    margin: 0 0 0 5px;
+}
+
+.header_top_right li a{
+    color: #6c6c6c;
+}
+
+.header_top_right li span{
+    border: 2px solid ;
+    border-color: #cccccc transparent transparent transparent ;
+    float: right;
+    margin: 17px 0 0 12px;
+}
+
+
+li.car i{
+    width: 11px;
+    height: 12px;
+    background: url("../images/daogang.png") no-repeat;
+    float: left;
+    margin: 13px 6px 0 0;
+}
+li.car span,li.wangzhan span{
+    border-color: #ff4400 transparent transparent;
+}
+
+li.shoucang i{
+    width: 11px;
+    height: 12px;
+    background: url("../images/daogang.png") no-repeat 0 -20px;
+    float: left;
+    margin: 14px 6px 0 0;
+}
+li.wangzhan i{
+    width: 11px;
+    height: 12px;
+    background: url("../images/daogang.png") no-repeat -2px -39px;
+    float: left;
+    margin: 16px 6px 0 0;
+}
+
+.logo_auto h1 {
+    width: 199px;
+    height: 129px;
+    float: left;
+}
+
+.logo_input{
+    width: 851px;
+    height:130px;
+    float: left;
+}
+.logo_input_left{
+    width: 772px;
+    height: 130px;
+    float: left;
+}
+
+.logo_input_left_top{
+    width: 772px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo_input_left_bottom{
+    width: 771px;
+    height: 30px;
+}
+
+.logo_input_left_bottom_ul{
+    width: 670px;
+    float: left;
+    margin: 0 0 0 38px;
+}
+
+.logo_input_left_bottom_ul li{
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    padding: 0 9px;
+    float: left;
+}
+
+.logo_input_left_bottom_ul li a{
+    color: #6c6c6c;
+}
+.logo_input_left_bottom_ul li.this_active a{
+    color: #ff4400;
+}
+
+.logo_input_left_bottom i{
+    font-style:normal;
+    float: right;
+    margin: 4px 0 0 0;
+    border: 1px solid #cccccc;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    width: 39px;
+    color: #6c6c6c;
+    cursor: pointer;
+}
+.logo_input_left_bottom span{
+    border: 2px solid;
+    border-color: transparent transparent transparent #cccccc;
+    float: right;
+    margin: 8px 0 0 0;
+
+}
+
+.logo_input_left_right{
+    width: 48px;
+    height: 41px;
+    background: #000;
+    float: left;
+}
+
+.logo_input_left_top_box{
+    width:772px;
+    height: 100px;
+    margin: 35px 0 0 45px;
+    float: left;
+}
+
+.logo_input_left_top_all span.active{
+    background: #ff5400;
+    color: white;
+
+}
+.logo_input_left_top_all_input{
+    width: 726px;
+    height: 40px;
+    background: #ff4400;
+}
+
+.logo_input_left_top_all_input input[type="text"]{
+    width: 587px;
+    height: 34px;
+    border: 3px solid #ff5500;
+    float: left;
+    padding: 0 0 0 31px;
+    background: url("../images/seach_1.png") no-repeat white;
+    color: #9c9c9c;
+}
+
+.logo_input_left_top_all_input input[type="submit"]{
+    width: 101px;
+    height: 40px;
+    border: 3px solid #ff4400;
+    background: url("../images/seach.png") no-repeat ;
+    float: left;
+    cursor: pointer;
+}
+
+.logo_input_left_top_all span{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.logo_input_left_top_all span:hover{
+    background: #ffeee5;
+    color: #ff5400;
+}
+.logo_input_right{
+    width: 79px;
+    height: 130px;
+    float: right;
+}
+.logo_input_right_seach{
+    width: 53px;
+    height: 40px;
+    margin: 0 0 0 13px;
+}
+.logo_input_right_seach a{
+    text-decoration: none;
+}
+.logo_input_right_seach p{
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    margin: 58px 0 0 0;
+    color: #6c6c6c;
+}
+
+.logo_erwei{
+    width: 140px;
+    height: 130px;
+    float: right;
+}
+.logo_erweo_ok{
+    width: 116px;
+    height: 114px;
+    float: left;
+    margin: 16px 0 0 25px;
+}
+
+.logo_erweo_ok_x{
+    width: 18px;
+    height: 18px;
+    background: url("../images/X.png") no-repeat;
+    float: left;
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    cursor: pointer;
+}
+
+.logo_erweo_ok_none{
+    width: 94px;
+    height: 112px;
+    background: url("../images/phone.png") no-repeat;
+    float: left;
+    border: 1px solid #e8e8e8;
+}
