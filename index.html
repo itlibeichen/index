@@ -609,7 +609,7 @@
             oBox.addEventListener('click', function () {
                 var oMusicAll = document.getElementById('musicAll');
                 //var oO = document.createElement('div');
-                //oO.setAttribute('title','中文');  我只是忽然忘记了setAttribute 怎么玩了而已
+                //oO.setAttribute('title','中文');
                 oMusicAll.innerHTML = '<audio controls="controls" loop="loop" autoplay="autoplay" id="music"><source src="gd.mp3" type="audio/ogg">Your browser does not support the audio tag.</audio>';
                 //oMusicAll.appendChild(oO);
             }, false);
@@ -760,13 +760,13 @@
             var oTime = document.getElementById('time');
             var aImg2 = oTime.getElementsByClassName('num');
             var oDate = new Date();
-            var H = oDate.getHours();//小时
-            var m = oDate.getMinutes();//分钟
-            var s = oDate.getSeconds();//秒钟
+            var H = oDate.getHours();
+            var m = oDate.getMinutes();
+            var s = oDate.getSeconds();
             function toDou (n){
                 return n<10?'0'+n : ''+n;
             }
-            var str = toDou(H) + toDou(m) + toDou(s); //这里不明白
+            var str = toDou(H) + toDou(m) + toDou(s);
             for (var i = 0; i < aImg2.length; i++) {
                 aImg2[i].src = 'images/tike/images/' + str.charAt(i) + '.png'; //str的charAt(i); 这个是处理字符串的兼容性;
             }
@@ -815,6 +815,10 @@
             },30);
             startMove(oRut,{bottom:800},{easing:'ease-out'});
         },false);
+    })();
+    /*console.log*/
+    (function (){
+        console.log('我喜欢学习一些我感兴趣的东西,还喜欢关注一些新的动向比如 --> 关注虎嗅36氪、偶尔听听罗胖的每天一分钟;沟通算是我的强项之一,我喜欢暴露问题,不知道就是不知道,没有什么能代替谎言带来的一系列痛苦,我希望有一个好团队,不仅仅是归属感,我更向往的是一个完整的“家”,技术方面个人感觉还是需要努力，因为这样我才能不会忘记属于自己的初衷;联系方式:13552300037;')
     })();
 </script>
 </html>
